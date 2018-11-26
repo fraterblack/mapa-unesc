@@ -46,4 +46,11 @@ public class Excerpt extends Model {
 		this.description = description;
 	}
 
+	public Path getPath() {
+		return path;
+	}
+
+	public void setPath(Path path) {
+		this.path = path;
+	}
 }

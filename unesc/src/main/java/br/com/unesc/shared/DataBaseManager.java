@@ -6,7 +6,7 @@ import com.j256.ormlite.jdbc.JdbcConnectionSource;
 import com.j256.ormlite.support.ConnectionSource;
 
 public class DataBaseManager {
-	private static final String URL = "jdbc:mysql://localhost/mapa?useTimezone=true&serverTimezone=UTC";
+	private static final String URL = "jdbc:mysql://localhost/mapa?useTimezone=true&serverTimezone=UTC&characterEncoding=utf8";
 	private static final String USER = "root";
 	private static final String PASSWORD = "admin";
 	

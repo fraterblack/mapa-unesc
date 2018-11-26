@@ -2,7 +2,6 @@ package br.com.unesc;
 
 import static spark.Spark.*;
 
-import br.com.unesc.admin.AdminController;
 import br.com.unesc.path.PathController;
 import br.com.unesc.place.PlaceController;
 
@@ -33,11 +32,6 @@ public class Application {
     	    	get("/:id", (req, res) -> { return PathController.getById(req, res); });
     	    	get("/:originId/to/:destinationId", (req, res) -> { return PathController.getSmallestRoute(req, res); });
     	    });
-    	});
-    	
-    	path("/restricted-api", () -> {
-    		post("/importar-locais", (req, res) -> { return AdminController.importPlaces(req, res); });
-    		post("/importar-rotas", (req, res) -> { return AdminController.importRoutes(req, res); });
     	});
     }
 }

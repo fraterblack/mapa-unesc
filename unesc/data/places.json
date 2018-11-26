@@ -1,0 +1,242 @@
+[
+  {
+    "name": "XXI-A",
+    "isPlace": "true"
+  },
+  {
+    "name": "XXI-B",
+    "isPlace": "true"
+  },
+  {
+    "name": "XXI-C",
+    "isPlace": "true"
+  },
+  {
+    "name": "Centac",
+    "isPlace": "true"
+  },
+  {
+    "name": "Bloco da Reitoria / Museu",
+    "isPlace": "true"
+  },
+  {
+    "name": "Biblioteca",
+    "isPlace": "true"
+  },
+  {
+    "name": "Bloco A",
+    "isPlace": "true"
+  },
+  {
+    "name": "Bloco B",
+    "isPlace": "true"
+  },
+  {
+    "name": "Bloco C",
+    "isPlace": "true"
+  },
+  {
+    "name": "Bloco D",
+    "isPlace": "true"
+  },
+  {
+    "name": "Bloco E",
+    "isPlace": "true"
+  },
+  {
+    "name": "Bloco F",
+    "isPlace": "true"
+  },
+  {
+    "name": "Bloco G",
+    "isPlace": "true"
+  },
+  {
+    "name": "Bloco H",
+    "isPlace": "true"
+  },
+  {
+    "name": "Bloco I",
+    "isPlace": "true"
+  },
+  {
+    "name": "Bloco J",
+    "isPlace": "true"
+  },
+  {
+    "name": "Bloco K",
+    "isPlace": "true"
+  },
+  {
+    "name": "Bloco M",
+    "isPlace": "true"
+  },
+  {
+    "name": "Bloco L",
+    "isPlace": "true"
+  },
+  {
+    "name": "Bloco N",
+    "isPlace": "true"
+  },
+  {
+    "name": "Bloco O",
+    "isPlace": "true"
+  },
+  {
+    "name": "Bloco P - Pós e Extensão",
+    "isPlace": "true"
+  },
+  {
+    "name": "Bloco Q",
+    "isPlace": "true"
+  },
+  {
+    "name": "Bloco Z",
+    "isPlace": "true"
+  },
+  {
+    "name": "Bloco Apoio Logístico",
+    "isPlace": "true"
+  },
+  {
+    "name": "Hall de Entrada",
+    "isPlace": "true"
+  },
+  {
+    "name": "Pátio bloco Z",
+    "isPlace": "false"
+  },
+  {
+    "name": "Escadaria Centac",
+    "isPlace": "false"
+  },
+  {
+    "name": "Entre Centac e Blocos",
+    "isPlace": "false"
+  },
+  {
+    "name": "Entre XXI-C e Blocos",
+    "isPlace": "false"
+  },
+  {
+    "name": "Chegada I e J",
+    "isPlace": "false"
+  },
+  {
+    "name": "Entradas K",
+    "isPlace": "false"
+  },
+  {
+    "name": "Esquina KLJ",
+    "isPlace": "false"
+  },
+  {
+    "name": "Entradas L e M",
+    "isPlace": "false"
+  },
+  {
+    "name": "Chegada L e M",
+    "isPlace": "false"
+  },
+  {
+    "name": "Esquina NLM",
+    "isPlace": "false"
+  },
+  {
+    "name": "Acesso N e P",
+    "isPlace": "false"
+  },
+  {
+    "name": "Entrada N",
+    "isPlace": "false"
+  },
+  {
+    "name": "Entradas N e O",
+    "isPlace": "false"
+  },
+  {
+    "name": "Esquina ONKL",
+    "isPlace": "false"
+  },
+  {
+    "name": "Esquina LMJ",
+    "isPlace": "false"
+  },
+  {
+    "name": "Entrada J",
+    "isPlace": "false"
+  },
+  {
+    "name": "Esquina HGJ",
+    "isPlace": "false"
+  },
+  {
+    "name": "Esquina HIJ",
+    "isPlace": "false"
+  },
+  {
+    "name": "Entrada H",
+    "isPlace": "false"
+  },
+  {
+    "name": "Chegada H",
+    "isPlace": "false"
+  },
+  {
+    "name": "Esquina DEH",
+    "isPlace": "false"
+  },
+  {
+    "name": "Esquina EFH",
+    "isPlace": "false"
+  },
+  {
+    "name": "Entrada F",
+    "isPlace": "false"
+  },
+  {
+    "name": "Entrada DE",
+    "isPlace": "false"
+  },
+  {
+    "name": "Esquina ABDE",
+    "isPlace": "false"
+  },
+  {
+    "name": "Esquina BEF",
+    "isPlace": "false"
+  },
+  {
+    "name": "Entrada B",
+    "isPlace": "false"
+  },
+  {
+    "name": "Esquina AB",
+    "isPlace": "false"
+  },
+  {
+    "name": "Esquina BC",
+    "isPlace": "false"
+  },
+  {
+    "name": "Esquina BCE",
+    "isPlace": "false"
+  },
+  {
+    "name": "Chegada C",
+    "isPlace": "false"
+  },
+  {
+    "name": "Saída Biblioteca para Blocos",
+    "isPlace": "false"
+  },
+  {
+    "name": "Chegada Biblioteca para Blocos",
+    "isPlace": "false"
+  },
+  {
+    "name": "Meio Caminho Centac",
+    "isPlace": "false"
+  }
+]
