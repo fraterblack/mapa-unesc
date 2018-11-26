@@ -1,6 +1,8 @@
 package br.com.unesc.algorithm;
 
 import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 import java.util.TreeMap;
 
 import br.com.unesc.path.Path;
@@ -34,8 +36,6 @@ public class PathFounder {
 		
 		//Add paths to Dijsktra
 		paths.forEach(path -> {
-			System.out.println(nodeIndexes.get(path.getOriginPlace().getId()));
-			System.out.println(nodeIndexes.get(path.getDestinationPlace().getId()));
 			try {
 				dij.insertEdge(
 					nodeIndexes.get(path.getOriginPlace().getId()), 
@@ -48,19 +48,39 @@ public class PathFounder {
 		});
 	}
 	
-	public List<Path> findSmallestRoute(Integer originId, Integer destinationId) throws Exception {
+	public TreeMap<Integer, Path> findSmallestRoute(Integer originId, Integer destinationId) throws Exception {
 		dij.findSmallestRoute(nodeIndexes.get(originId), nodeIndexes.get(destinationId));
 		
-		System.out.println(dij.getDistanceToDestination());
+		return parseRouteToDestination(dij.getRouteToDestination());
 		
-		dij.getRouteToDestination().forEach((a, b) -> {
-			System.out.println(a);
-			System.out.println(b.getNodeOrigin());
-			System.out.println(b.getNodeDestin());
-			System.out.println(b.getAccumulatedDistance());
-			System.out.println("...............................");
+		//return paths;
+	}
+	
+	private TreeMap<Integer, Path> parseRouteToDestination(TreeMap<Integer, Edge> route) {
+		TreeMap<Integer, Path> pathsToDestination = new TreeMap<Integer, Path>();
+		
+		route.forEach((a, b) -> {
+			Optional<Path> path = paths.stream()
+				.filter(p -> 
+					p.getOriginPlace().getId() == getKeyByValue(nodeIndexes, b.getNodeOrigin()) 
+					&& p.getDestinationPlace().getId() == getKeyByValue(nodeIndexes, b.getNodeDestin())
+				)
+				.findFirst();
+			
+			if (path.isPresent()) {
+				pathsToDestination.put(pathsToDestination.size(), path.get());
+			}
 		});
 		
-		return paths;
+		return pathsToDestination;
+	}
+	
+	private <K, V> K getKeyByValue(Map<K, V> map, V value) {
+	    for (Map.Entry<K, V> entry : map.entrySet()) {
+	            if (value.equals(entry.getValue())) {
+	            return entry.getKey();
+	        }
+	    }
+	    return null;
 	}
 }

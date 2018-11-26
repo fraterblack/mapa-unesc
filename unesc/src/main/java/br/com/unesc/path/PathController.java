@@ -1,6 +1,7 @@
 package br.com.unesc.path;
 
 import java.util.List;
+import java.util.TreeMap;
 
 import br.com.unesc.algorithm.PathFounder;
 import br.com.unesc.shared.Controller;
@@ -58,7 +59,7 @@ public class PathController extends Controller {
 			PathFounder pathFounder = new PathFounder(paths);
 			
 			//Found small route from origin to destination
-			List<Path> routePaths = pathFounder.findSmallestRoute(Integer.parseInt(request.params("originId")), Integer.parseInt(request.params("destinationId")));
+			TreeMap<Integer, Path> routePaths = pathFounder.findSmallestRoute(Integer.parseInt(request.params("originId")), Integer.parseInt(request.params("destinationId")));
 			
 			//If none path is returned, the route is impossible
 			if (routePaths.size() == 0) {
@@ -67,7 +68,14 @@ public class PathController extends Controller {
 				return "{\"message\":\"Não existe rota para a origem e o destino informados\"}";
 			}
 			
-			return dataToJson(routePaths);
+			int totalDistance = routePaths.entrySet().stream()
+				.mapToInt(r -> r.getValue().getDistance()).sum();
+			
+			return "{"
+					+ "\"total_distance\":\"" + totalDistance + "\","
+					+ "\"total_paths\":\"" + routePaths.size() + "\","
+					+ "\"paths\":" + dataToJson(routePaths) 
+					+ "}";
 		} catch (Exception e) {
 			response.status(501);
 			

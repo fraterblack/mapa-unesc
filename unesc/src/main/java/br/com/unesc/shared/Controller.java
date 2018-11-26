@@ -1,7 +1,6 @@
 package br.com.unesc.shared;
 
 import java.io.IOException;
-import java.io.StringWriter;
 import java.sql.SQLException;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -18,9 +17,9 @@ public abstract class Controller {
         try {
             ObjectMapper mapper = new ObjectMapper();
             mapper.enable(SerializationFeature.INDENT_OUTPUT);
-            StringWriter sw = new StringWriter();
-            mapper.writeValue(sw, data);
-            return sw.toString();
+            mapper.enable(SerializationFeature.WRITE_SINGLE_ELEM_ARRAYS_UNWRAPPED);
+            
+            return mapper.writeValueAsString(data);
         } catch (IOException e){
             throw new RuntimeException("IOException from a StringWriter?");
         }
