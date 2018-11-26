@@ -36,7 +36,8 @@ public class Application {
     	});
     	
     	path("/restricted-api", () -> {
-    		get("/importar-rotas", (req, res) -> { return AdminController.importRoutes(req, res); });
+    		post("/importar-locais", (req, res) -> { return AdminController.importPlaces(req, res); });
+    		post("/importar-rotas", (req, res) -> { return AdminController.importRoutes(req, res); });
     	});
     }
 }

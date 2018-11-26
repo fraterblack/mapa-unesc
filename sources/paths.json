@@ -1,0 +1,4846 @@
+[{
+  "originNode": {
+    "place": true,
+    "name": "XXI-A",
+    "x": 555,
+    "y": 1664
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "XXI-B",
+    "x": 496,
+    "y": 1584
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "XXI-A",
+    "x": 555,
+    "y": 1664
+  }, {
+    "description": "Caminhe através do pátio passando ao lado do palco de apresentações",
+    "place": true,
+    "name": "XXI-B",
+    "x": 496,
+    "y": 1584
+  }],
+  "distance": 12
+}, {
+  "originNode": {
+    "place": true,
+    "name": "XXI-A",
+    "x": 555,
+    "y": 1664
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "XXI-C",
+    "x": 474,
+    "y": 1637
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "XXI-A",
+    "x": 555,
+    "y": 1664
+  }, {
+    "description": "Atravesse pelo pátio em direção a livraria",
+    "place": true,
+    "name": "XXI-C",
+    "x": 474,
+    "y": 1637
+  }],
+  "distance": 10
+}, {
+  "originNode": {
+    "place": true,
+    "name": "XXI-A",
+    "x": 555,
+    "y": 1664
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Centac",
+    "x": 540,
+    "y": 1792
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "XXI-A",
+    "x": 555,
+    "y": 1664
+  }, {
+    "x": 585,
+    "y": 1719,
+    "description": "Desça através do caminho coberto em direção a saída para terminal central"
+  }, {
+    "x": 580,
+    "y": 1734,
+    "description": "Acesse a rampa lateral a sua direita"
+  }, {
+    "x": 597,
+    "y": 1763,
+    "description": "Continue pela rampa e entre no corredor a sua direita"
+  }, {
+    "place": true,
+    "name": "Centac",
+    "x": 540,
+    "y": 1792
+  }],
+  "distance": 19
+}, {
+  "originNode": {
+    "place": true,
+    "name": "XXI-A",
+    "x": 555,
+    "y": 1664
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Escadaria Centac",
+    "x": 608,
+    "y": 1762
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "XXI-A",
+    "x": 555,
+    "y": 1664
+  }, {
+    "description": "Desça através do caminho coberto em direção a saída para terminal central",
+    "place": false,
+    "name": "Escadaria Centac",
+    "x": 608,
+    "y": 1762
+  }],
+  "distance": 13
+}, {
+  "originNode": {
+    "place": true,
+    "name": "XXI-B",
+    "x": 496,
+    "y": 1584
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "XXI-A",
+    "x": 555,
+    "y": 1664
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "XXI-B",
+    "x": 496,
+    "y": 1584
+  }, {
+    "description": "Caminhe através do pátio passando ao lado do palco de apresentações",
+    "place": true,
+    "name": "XXI-A",
+    "x": 555,
+    "y": 1664
+  }],
+  "distance": 12
+}, {
+  "originNode": {
+    "place": true,
+    "name": "XXI-B",
+    "x": 496,
+    "y": 1584
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "XXI-C",
+    "x": 474,
+    "y": 1637
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "XXI-B",
+    "x": 496,
+    "y": 1584
+  }, {
+    "description": "Caminhe ao lado da Doce Pão até a livraria",
+    "place": true,
+    "name": "XXI-C",
+    "x": 474,
+    "y": 1637
+  }],
+  "distance": 7
+}, {
+  "originNode": {
+    "place": true,
+    "name": "XXI-B",
+    "x": 496,
+    "y": 1584
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco Apoio Logístico",
+    "x": 447,
+    "y": 1533
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "XXI-B",
+    "x": 496,
+    "y": 1584
+  }, {
+    "x": 495,
+    "y": 1561,
+    "description": "Atravesse a rua e acesse o porta do prédio a frente"
+  }, {
+    "description": "Atravesse a rua e acesse o porta do prédio a frente",
+    "place": true,
+    "name": "Bloco Apoio Logístico",
+    "x": 447,
+    "y": 1533
+  }],
+  "distance": 8
+}, {
+  "originNode": {
+    "place": true,
+    "name": "XXI-C",
+    "x": 474,
+    "y": 1637
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "XXI-A",
+    "x": 555,
+    "y": 1664
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "XXI-C",
+    "x": 474,
+    "y": 1637
+  }, {
+    "description": "Vire a sua direita e caminhe através do pátio passando em frente aos banheiros",
+    "place": true,
+    "name": "XXI-A",
+    "x": 555,
+    "y": 1664
+  }],
+  "distance": 10
+}, {
+  "originNode": {
+    "place": true,
+    "name": "XXI-C",
+    "x": 474,
+    "y": 1637
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "XXI-B",
+    "x": 496,
+    "y": 1584
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "XXI-C",
+    "x": 474,
+    "y": 1637
+  }, {
+    "description": "Caminhe ao lado da Doce Pão em direção à saída a sua esquerda",
+    "place": true,
+    "name": "XXI-B",
+    "x": 496,
+    "y": 1584
+  }],
+  "distance": 7
+}, {
+  "originNode": {
+    "place": true,
+    "name": "XXI-C",
+    "x": 474,
+    "y": 1637
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Entre XXI-C e Blocos",
+    "x": 375,
+    "y": 1744
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "XXI-C",
+    "x": 474,
+    "y": 1637
+  }, {
+    "x": 464,
+    "y": 1682,
+    "description": "Passe em frente a livraria em direção ao restaurante"
+  }, {
+    "x": 399,
+    "y": 1713,
+    "description": "Percorra todo o corredor passando pelo restaurante"
+  }, {
+    "description": "Ao final do corredor se dirija em direção ao monumento no pátio",
+    "place": false,
+    "name": "Entre XXI-C e Blocos",
+    "x": 375,
+    "y": 1744
+  }],
+  "distance": 18
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Escadaria Centac",
+    "x": 608,
+    "y": 1762
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco da Reitoria / Museu",
+    "x": 660,
+    "y": 1837
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Escadaria Centac",
+    "x": 608,
+    "y": 1762
+  }, {
+    "x": 623,
+    "y": 1787,
+    "description": "Desça através do caminho coberto em direção a saída para terminal central"
+  }, {
+    "x": 638,
+    "y": 1793
+  }, {
+    "description": "Passe pelo corredor até o Xerox",
+    "place": true,
+    "name": "Bloco da Reitoria / Museu",
+    "x": 660,
+    "y": 1837
+  }],
+  "distance": 11
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Escadaria Centac",
+    "x": 608,
+    "y": 1762
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "XXI-A",
+    "x": 555,
+    "y": 1664
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Escadaria Centac",
+    "x": 608,
+    "y": 1762
+  }, {
+    "description": "Suba através do caminho coberto até o bloco XXI-A",
+    "place": true,
+    "name": "XXI-A",
+    "x": 555,
+    "y": 1664
+  }],
+  "distance": 13
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Escadaria Centac",
+    "x": 608,
+    "y": 1762
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Centac",
+    "x": 540,
+    "y": 1792
+  },
+  "reducedMobility": false,
+  "excerpts": [{
+    "place": false,
+    "name": "Escadaria Centac",
+    "x": 608,
+    "y": 1762
+  }, {
+    "description": "Suba a escadaria e percorra o corredor",
+    "place": true,
+    "name": "Centac",
+    "x": 540,
+    "y": 1792
+  }],
+  "distance": 9
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Centac",
+    "x": 540,
+    "y": 1792
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "XXI-A",
+    "x": 555,
+    "y": 1664
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Centac",
+    "x": 540,
+    "y": 1792
+  }, {
+    "x": 597,
+    "y": 1763,
+    "description": "Saia em direção ao estacionamento dos blocos XXI"
+  }, {
+    "x": 580,
+    "y": 1734,
+    "description": "Acesse a rampa lateral a sua esquerda, antes da escadaria"
+  }, {
+    "x": 585,
+    "y": 1719,
+    "description": "Ao final da rampa, vire a esquerda"
+  }, {
+    "description": "Suba através do caminho coberto até o bloco XXI-A",
+    "place": true,
+    "name": "XXI-A",
+    "x": 555,
+    "y": 1664
+  }],
+  "distance": 19
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Centac",
+    "x": 540,
+    "y": 1792
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "XXI-C",
+    "x": 474,
+    "y": 1637
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Centac",
+    "x": 540,
+    "y": 1792
+  }, {
+    "x": 499,
+    "y": 1771,
+    "description": "Caminhe em direção à saída lateral"
+  }, {
+    "x": 454,
+    "y": 1688,
+    "description": "Siga em direção ao prédio a frente"
+  }, {
+    "x": 464,
+    "y": 1682
+  }, {
+    "description": "Passe em frente a livraria em direção ao restaurante",
+    "place": true,
+    "name": "XXI-C",
+    "x": 474,
+    "y": 1637
+  }],
+  "distance": 22
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Centac",
+    "x": 540,
+    "y": 1792
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Escadaria Centac",
+    "x": 608,
+    "y": 1762
+  },
+  "reducedMobility": false,
+  "excerpts": [{
+    "place": true,
+    "name": "Centac",
+    "x": 540,
+    "y": 1792
+  }, {
+    "description": "Percorra o corredor em direção ao estacionamento, ao final desça as escadas",
+    "place": false,
+    "name": "Escadaria Centac",
+    "x": 608,
+    "y": 1762
+  }],
+  "distance": 9
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Centac",
+    "x": 540,
+    "y": 1792
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Entre Centac e Blocos",
+    "x": 453,
+    "y": 1818
+  },
+  "reducedMobility": false,
+  "excerpts": [{
+    "place": true,
+    "name": "Centac",
+    "x": 540,
+    "y": 1792
+  }, {
+    "description": "Percorra o corredor em direção a saída dos fundos",
+    "place": false,
+    "name": "Entre Centac e Blocos",
+    "x": 453,
+    "y": 1818
+  }],
+  "distance": 11
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Hall de Entrada",
+    "x": 767,
+    "y": 2040
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Biblioteca",
+    "x": 700,
+    "y": 1956
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Hall de Entrada",
+    "x": 767,
+    "y": 2040
+  }, {
+    "x": 719,
+    "y": 1948,
+    "description": "Caminhe em direção ao interior do campus. Vire a esquerda na próxima entrada"
+  }, {
+    "description": "Você já pode ver a porta de acesso à Biblioteca",
+    "place": true,
+    "name": "Biblioteca",
+    "x": 700,
+    "y": 1956
+  }],
+  "distance": 14
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Hall de Entrada",
+    "x": 767,
+    "y": 2040
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco da Reitoria / Museu",
+    "x": 660,
+    "y": 1837
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Hall de Entrada",
+    "x": 767,
+    "y": 2040
+  }, {
+    "description": "Caminhe em direção ao interior do campus. Siga sempre em frente até o próximo bloco",
+    "place": true,
+    "name": "Bloco da Reitoria / Museu",
+    "x": 660,
+    "y": 1837
+  }],
+  "distance": 28
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Hall de Entrada",
+    "x": 767,
+    "y": 2040
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Chegada C",
+    "x": 539,
+    "y": 2127
+  },
+  "reducedMobility": false,
+  "excerpts": [{
+    "place": true,
+    "name": "Hall de Entrada",
+    "x": 767,
+    "y": 2040
+  }, {
+    "x": 639,
+    "y": 2101,
+    "description": "Siga em direção a saída lateral do Hall de Entrada"
+  }, {
+    "description": "Atravesse todo estacionamento até o caminho paralelo ao bloco C",
+    "place": false,
+    "name": "Chegada C",
+    "x": 539,
+    "y": 2127
+  }],
+  "distance": 29
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco da Reitoria / Museu",
+    "x": 660,
+    "y": 1837
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Hall de Entrada",
+    "x": 767,
+    "y": 2040
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco da Reitoria / Museu",
+    "x": 660,
+    "y": 1837
+  }, {
+    "description": "Caminhe em direção a saída terminal de ônibus. Siga sempre em frente até o próximo bloco",
+    "place": true,
+    "name": "Hall de Entrada",
+    "x": 767,
+    "y": 2040
+  }],
+  "distance": 28
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco da Reitoria / Museu",
+    "x": 660,
+    "y": 1837
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Biblioteca",
+    "x": 700,
+    "y": 1956
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco da Reitoria / Museu",
+    "x": 660,
+    "y": 1837
+  }, {
+    "x": 719,
+    "y": 1948,
+    "description": "Caminhe em direção ao terminal de ônibus. Vire a direita na próxima entrada"
+  }, {
+    "description": "Você já pode ver a porta de acesso à Biblioteca",
+    "place": true,
+    "name": "Biblioteca",
+    "x": 700,
+    "y": 1956
+  }],
+  "distance": 17
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco da Reitoria / Museu",
+    "x": 660,
+    "y": 1837
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Escadaria Centac",
+    "x": 608,
+    "y": 1762
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco da Reitoria / Museu",
+    "x": 660,
+    "y": 1837
+  }, {
+    "x": 638,
+    "y": 1793,
+    "description": "Suba através do caminho coberto"
+  }, {
+    "x": 623,
+    "y": 1787
+  }, {
+    "description": "Suba através do caminho coberto",
+    "place": false,
+    "name": "Escadaria Centac",
+    "x": 608,
+    "y": 1762
+  }],
+  "distance": 11
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Biblioteca",
+    "x": 700,
+    "y": 1956
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Hall de Entrada",
+    "x": 767,
+    "y": 2040
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Biblioteca",
+    "x": 700,
+    "y": 1956
+  }, {
+    "x": 719,
+    "y": 1948,
+    "description": "Caminhe até o corredor principal e vire a sua direita"
+  }, {
+    "description": "Caminhe até o próximo bloco",
+    "place": true,
+    "name": "Hall de Entrada",
+    "x": 767,
+    "y": 2040
+  }],
+  "distance": 14
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Biblioteca",
+    "x": 700,
+    "y": 1956
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco da Reitoria / Museu",
+    "x": 660,
+    "y": 1837
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Biblioteca",
+    "x": 700,
+    "y": 1956
+  }, {
+    "x": 719,
+    "y": 1948,
+    "description": "Caminhe até o corredor principal e vire a sua esquerda"
+  }, {
+    "description": "Caminhe até o próximo bloco",
+    "place": true,
+    "name": "Bloco da Reitoria / Museu",
+    "x": 660,
+    "y": 1837
+  }],
+  "distance": 17
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Biblioteca",
+    "x": 700,
+    "y": 1956
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Saída Biblioteca para Blocos",
+    "x": 588,
+    "y": 1983
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Biblioteca",
+    "x": 700,
+    "y": 1956
+  }, {
+    "x": 626,
+    "y": 1996,
+    "description": "Caminhe através do prédio em direção a saída dos fundos"
+  }, {
+    "place": false,
+    "name": "Saída Biblioteca para Blocos",
+    "x": 588,
+    "y": 1983
+  }],
+  "distance": 15
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco Apoio Logístico",
+    "x": 447,
+    "y": 1533
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "XXI-B",
+    "x": 496,
+    "y": 1584
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco Apoio Logístico",
+    "x": 447,
+    "y": 1533
+  }, {
+    "x": 495,
+    "y": 1561,
+    "description": "Atravesse a rua e acesse o porta de acesso a sua frente"
+  }, {
+    "description": "Atravesse a rua e acesse o porta de acesso a sua frente",
+    "place": true,
+    "name": "XXI-B",
+    "x": 496,
+    "y": 1584
+  }],
+  "distance": 8
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco Apoio Logístico",
+    "x": 447,
+    "y": 1533
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Pátio bloco Z",
+    "x": 284,
+    "y": 1667
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco Apoio Logístico",
+    "x": 447,
+    "y": 1533
+  }, {
+    "x": 345,
+    "y": 1620,
+    "description": "Caminhe em direção ao bloco Q, passando em frente ao DCE"
+  }, {
+    "description": "Caminhe em direção ao bloco Q, passando em frente ao DCE",
+    "place": false,
+    "name": "Pátio bloco Z",
+    "x": 284,
+    "y": 1667
+  }],
+  "distance": 25
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco A",
+    "x": 431,
+    "y": 2216
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina AB",
+    "x": 449,
+    "y": 2222
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco A",
+    "x": 431,
+    "y": 2216
+  }, {
+    "x": 444,
+    "y": 2212,
+    "description": "Caminhe em direção a porta de saída e vire à sua direita"
+  }, {
+    "description": "Siga em direção à próxima esquina",
+    "place": false,
+    "name": "Esquina AB",
+    "x": 449,
+    "y": 2222
+  }],
+  "distance": 2
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco A",
+    "x": 431,
+    "y": 2216
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina ABDE",
+    "x": 416,
+    "y": 2143
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco A",
+    "x": 431,
+    "y": 2216
+  }, {
+    "x": 444,
+    "y": 2212,
+    "description": "Caminhe em direção a porta de saída e vire à sua esquerda"
+  }, {
+    "description": "Siga em direção à próxima esquina",
+    "place": false,
+    "name": "Esquina ABDE",
+    "x": 416,
+    "y": 2143
+  }],
+  "distance": 10
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco D",
+    "x": 384,
+    "y": 2125
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina ABDE",
+    "x": 416,
+    "y": 2143
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco D",
+    "x": 384,
+    "y": 2125
+  }, {
+    "description": "Caminhe em direção a porta de saída e vire à sua direita",
+    "place": false,
+    "name": "Entrada DE",
+    "x": 406,
+    "y": 2116
+  }, {
+    "description": "Siga em direção à esquina do blocos D e B",
+    "place": false,
+    "name": "Esquina ABDE",
+    "x": 416,
+    "y": 2143
+  }],
+  "distance": 5
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco D",
+    "x": 384,
+    "y": 2125
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina DEH",
+    "x": 395,
+    "y": 2089
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco D",
+    "x": 384,
+    "y": 2125
+  }, {
+    "description": "Caminhe em direção a porta de saída e vire à sua esquerda",
+    "place": false,
+    "name": "Entrada DE",
+    "x": 406,
+    "y": 2116
+  }, {
+    "description": "Siga em direção à esquina do blocos E",
+    "place": false,
+    "name": "Esquina DEH",
+    "x": 395,
+    "y": 2089
+  }],
+  "distance": 5
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco E",
+    "x": 428,
+    "y": 2107
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina ABDE",
+    "x": 416,
+    "y": 2143
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco E",
+    "x": 428,
+    "y": 2107
+  }, {
+    "description": "Caminhe em direção a porta de saída e vire à sua esquerda",
+    "place": false,
+    "name": "Entrada DE",
+    "x": 406,
+    "y": 2116
+  }, {
+    "description": "Siga em direção à esquina do blocos D e B",
+    "place": false,
+    "name": "Esquina ABDE",
+    "x": 416,
+    "y": 2143
+  }],
+  "distance": 5
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco E",
+    "x": 428,
+    "y": 2107
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina DEH",
+    "x": 395,
+    "y": 2089
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco E",
+    "x": 428,
+    "y": 2107
+  }, {
+    "description": "Caminhe em direção a porta de saída e vire à sua direita",
+    "place": false,
+    "name": "Entrada DE",
+    "x": 406,
+    "y": 2116
+  }, {
+    "description": "Siga em direção à esquina do bloco E",
+    "place": false,
+    "name": "Esquina DEH",
+    "x": 395,
+    "y": 2089
+  }],
+  "distance": 5
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco C",
+    "x": 532,
+    "y": 2174
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Chegada C",
+    "x": 539,
+    "y": 2127
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco C",
+    "x": 532,
+    "y": 2174
+  }, {
+    "x": 554,
+    "y": 2166,
+    "description": "Caminhe em direção a porta de saída e vire à sua esquerda"
+  }, {
+    "description": "Siga em direção à próxima esquina",
+    "place": false,
+    "name": "Chegada C",
+    "x": 539,
+    "y": 2127
+  }],
+  "distance": 7
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco B",
+    "x": 470,
+    "y": 2172
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina BC",
+    "x": 504,
+    "y": 2199
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco B",
+    "x": 470,
+    "y": 2172
+  }, {
+    "description": "Caminhe em direção a porta de saída e vire à sua direita",
+    "place": false,
+    "name": "Entrada B",
+    "x": 490,
+    "y": 2165
+  }, {
+    "description": "Siga em direção à próxima esquina",
+    "place": false,
+    "name": "Esquina BC",
+    "x": 504,
+    "y": 2199
+  }],
+  "distance": 6
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco F",
+    "x": 483,
+    "y": 2085
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina BEF",
+    "x": 473,
+    "y": 2121
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco F",
+    "x": 483,
+    "y": 2085
+  }, {
+    "description": "Caminhe em direção a porta de saída e vire à sua esquerda",
+    "place": false,
+    "name": "Entrada F",
+    "x": 462,
+    "y": 2094
+  }, {
+    "description": "Siga em direção à esquina dos blocos E e F",
+    "place": false,
+    "name": "Esquina BEF",
+    "x": 473,
+    "y": 2121
+  }],
+  "distance": 5
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco F",
+    "x": 483,
+    "y": 2085
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina EFH",
+    "x": 451,
+    "y": 2067
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco F",
+    "x": 483,
+    "y": 2085
+  }, {
+    "description": "Caminhe em direção a porta de saída e vire à sua direita",
+    "place": false,
+    "name": "Entrada F",
+    "x": 462,
+    "y": 2094
+  }, {
+    "description": "Siga em direção à esquina dos blocos E e F",
+    "place": false,
+    "name": "Esquina EFH",
+    "x": 451,
+    "y": 2067
+  }],
+  "distance": 5
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco H",
+    "x": 412,
+    "y": 2032
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Chegada H",
+    "x": 441,
+    "y": 2041
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco H",
+    "x": 412,
+    "y": 2032
+  }, {
+    "description": "Caminhe em direção a porta de saída e vire à sua direita",
+    "place": false,
+    "name": "Entrada H",
+    "x": 433,
+    "y": 2024
+  }, {
+    "description": "Siga em direção à próxima esquina",
+    "place": false,
+    "name": "Chegada H",
+    "x": 441,
+    "y": 2041
+  }],
+  "distance": 4
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco H",
+    "x": 412,
+    "y": 2032
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina HIJ",
+    "x": 420,
+    "y": 1988
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco H",
+    "x": 412,
+    "y": 2032
+  }, {
+    "description": "Caminhe em direção a porta de saída e vire à sua esquerda",
+    "place": false,
+    "name": "Entrada H",
+    "x": 433,
+    "y": 2024
+  }, {
+    "description": "Siga em direção à próxima esquina",
+    "place": false,
+    "name": "Esquina HIJ",
+    "x": 420,
+    "y": 1988
+  }],
+  "distance": 6
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco I",
+    "x": 442,
+    "y": 1980
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina HGJ",
+    "x": 364,
+    "y": 2011
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco I",
+    "x": 442,
+    "y": 1980
+  }, {
+    "description": "Siga em direção à saída e continue caminhando pelo corredor entre os blocos H e J",
+    "place": false,
+    "name": "Esquina HGJ",
+    "x": 364,
+    "y": 2011
+  }],
+  "distance": 10
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco I",
+    "x": 442,
+    "y": 1980
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Chegada H",
+    "x": 441,
+    "y": 2041
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco I",
+    "x": 442,
+    "y": 1980
+  }, {
+    "description": "Caminhe em direção a porta de saída e vire à sua esquerda",
+    "place": false,
+    "name": "Esquina HIJ",
+    "x": 420,
+    "y": 1988
+  }, {
+    "description": "Siga em direção à próxima esquina",
+    "place": false,
+    "name": "Chegada H",
+    "x": 441,
+    "y": 2041
+  }],
+  "distance": 9
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco I",
+    "x": 442,
+    "y": 1980
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Chegada I e J",
+    "x": 403,
+    "y": 1944
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco I",
+    "x": 442,
+    "y": 1980
+  }, {
+    "description": "Caminhe em direção a porta de saída e vire à sua direita",
+    "place": false,
+    "name": "Esquina HIJ",
+    "x": 420,
+    "y": 1988
+  }, {
+    "description": "Siga em direção à próxima esquina",
+    "place": false,
+    "name": "Chegada I e J",
+    "x": 403,
+    "y": 1944
+  }],
+  "distance": 7
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco J",
+    "x": 385,
+    "y": 1962
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina HIJ",
+    "x": 420,
+    "y": 1988
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco J",
+    "x": 385,
+    "y": 1962
+  }, {
+    "description": "Caminhe em direção a porta de saída e vire à sua direita",
+    "place": false,
+    "name": "Entrada J",
+    "x": 406,
+    "y": 1954
+  }, {
+    "description": "Siga em direção à próxima esquina",
+    "place": false,
+    "name": "Esquina HIJ",
+    "x": 420,
+    "y": 1988
+  }],
+  "distance": 6
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco J",
+    "x": 385,
+    "y": 1962
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Chegada I e J",
+    "x": 403,
+    "y": 1944
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco J",
+    "x": 385,
+    "y": 1962
+  }, {
+    "description": "Caminhe em direção a porta de saída e vire à sua esquerda",
+    "place": false,
+    "name": "Entrada J",
+    "x": 406,
+    "y": 1954
+  }, {
+    "place": false,
+    "name": "Chegada I e J",
+    "x": 403,
+    "y": 1944
+  }],
+  "distance": 3
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco G",
+    "x": 339,
+    "y": 2018
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina DEH",
+    "x": 395,
+    "y": 2089
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco G",
+    "x": 339,
+    "y": 2018
+  }, {
+    "description": "Caminhe em direção a porta de saída e vire à sua direita",
+    "place": false,
+    "name": "Esquina HGJ",
+    "x": 364,
+    "y": 2011
+  }, {
+    "description": "Siga em direção à próxima esquina",
+    "place": false,
+    "name": "Esquina DEH",
+    "x": 395,
+    "y": 2089
+  }],
+  "distance": 13
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco G",
+    "x": 339,
+    "y": 2018
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina KLJ",
+    "x": 336,
+    "y": 1938
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco G",
+    "x": 339,
+    "y": 2018
+  }, {
+    "description": "Caminhe em direção a porta de saída e vire à sua esquerda",
+    "place": false,
+    "name": "Esquina HGJ",
+    "x": 364,
+    "y": 2011
+  }, {
+    "description": "Siga em direção à esquina entre os blocos J e M",
+    "place": false,
+    "name": "Esquina KLJ",
+    "x": 336,
+    "y": 1938
+  }],
+  "distance": 12
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco G",
+    "x": 339,
+    "y": 2018
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina HIJ",
+    "x": 420,
+    "y": 1988
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco G",
+    "x": 339,
+    "y": 2018
+  }, {
+    "description": "Saia pela porta e continue caminhando pelo corredor paralelo aos blocos H e J",
+    "place": false,
+    "name": "Esquina HIJ",
+    "x": 420,
+    "y": 1988
+  }],
+  "distance": 10
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco M",
+    "x": 354,
+    "y": 1887
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Chegada L e M",
+    "x": 366,
+    "y": 1850
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco M",
+    "x": 354,
+    "y": 1887
+  }, {
+    "description": "Caminhe em direção a porta de saída e vire à sua esquerda",
+    "place": false,
+    "name": "Entradas L e M",
+    "x": 376,
+    "y": 1878
+  }, {
+    "description": "Siga em direção à próxima esquina",
+    "place": false,
+    "name": "Chegada L e M",
+    "x": 366,
+    "y": 1850
+  }],
+  "distance": 5
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco M",
+    "x": 354,
+    "y": 1887
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina LMJ",
+    "x": 391,
+    "y": 1916
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco M",
+    "x": 354,
+    "y": 1887
+  }, {
+    "description": "Caminhe em direção a porta de saída e vire à sua direita",
+    "place": false,
+    "name": "Entradas L e M",
+    "x": 376,
+    "y": 1878
+  }, {
+    "description": "Siga em direção à próxima esquina",
+    "place": false,
+    "name": "Esquina LMJ",
+    "x": 391,
+    "y": 1916
+  }],
+  "distance": 7
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco L",
+    "x": 398,
+    "y": 1870
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Chegada L e M",
+    "x": 366,
+    "y": 1850
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco L",
+    "x": 398,
+    "y": 1870
+  }, {
+    "description": "Caminhe em direção a porta de saída e vire à sua direita",
+    "place": false,
+    "name": "Entradas L e M",
+    "x": 376,
+    "y": 1878
+  }, {
+    "description": "Siga em direção à próxima esquina",
+    "place": false,
+    "name": "Chegada L e M",
+    "x": 366,
+    "y": 1850
+  }],
+  "distance": 5
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco L",
+    "x": 398,
+    "y": 1870
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina LMJ",
+    "x": 391,
+    "y": 1916
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco L",
+    "x": 398,
+    "y": 1870
+  }, {
+    "description": "Caminhe em direção a porta de saída e vire à sua esquerda",
+    "place": false,
+    "name": "Entradas L e M",
+    "x": 376,
+    "y": 1878
+  }, {
+    "description": "Siga em direção à próxima esquina",
+    "place": false,
+    "name": "Esquina LMJ",
+    "x": 391,
+    "y": 1916
+  }],
+  "distance": 7
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco K",
+    "x": 297,
+    "y": 1909
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina ONKL",
+    "x": 304,
+    "y": 1858
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco K",
+    "x": 297,
+    "y": 1909
+  }, {
+    "description": "Caminhe em direção a porta de saída e vire à sua esquerda",
+    "place": false,
+    "name": "Entradas K",
+    "x": 320,
+    "y": 1902
+  }, {
+    "description": "Siga em direção à próxima esquina",
+    "place": false,
+    "name": "Esquina ONKL",
+    "x": 304,
+    "y": 1858
+  }],
+  "distance": 8
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco K",
+    "x": 297,
+    "y": 1909
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina KLJ",
+    "x": 336,
+    "y": 1938
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco K",
+    "x": 297,
+    "y": 1909
+  }, {
+    "description": "Caminhe em direção a porta de saída e vire à sua direita",
+    "place": false,
+    "name": "Entradas K",
+    "x": 320,
+    "y": 1902
+  }, {
+    "description": "Siga em direção à esquina entre os blocos J e M",
+    "place": false,
+    "name": "Esquina KLJ",
+    "x": 336,
+    "y": 1938
+  }],
+  "distance": 7
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco O",
+    "x": 276,
+    "y": 1830
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco P - Pós e Extensão",
+    "x": 261,
+    "y": 1750
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco O",
+    "x": 276,
+    "y": 1830
+  }, {
+    "description": "Caminhe em direção a porta de saída e vire à sua esquerda",
+    "place": false,
+    "name": "Entradas N e O",
+    "x": 291,
+    "y": 1826
+  }, {
+    "description": "Caminhe até a próxima entrada",
+    "place": true,
+    "name": "Bloco P - Pós e Extensão",
+    "x": 261,
+    "y": 1750
+  }],
+  "distance": 11
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco O",
+    "x": 276,
+    "y": 1830
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco N",
+    "x": 320,
+    "y": 1814
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco O",
+    "x": 276,
+    "y": 1830
+  }, {
+    "description": "Caminhe em direção a porta de saída e entre na porta à sua frente",
+    "place": true,
+    "name": "Bloco N",
+    "x": 320,
+    "y": 1814
+  }],
+  "distance": 5
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco O",
+    "x": 276,
+    "y": 1830
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina ONKL",
+    "x": 304,
+    "y": 1858
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco O",
+    "x": 276,
+    "y": 1830
+  }, {
+    "description": "Caminhe em direção a porta de saída e vire à sua direita",
+    "place": false,
+    "name": "Entradas N e O",
+    "x": 291,
+    "y": 1826
+  }, {
+    "description": "Caminhe até a próxima esquina",
+    "place": false,
+    "name": "Esquina ONKL",
+    "x": 304,
+    "y": 1858
+  }],
+  "distance": 5
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco P - Pós e Extensão",
+    "x": 261,
+    "y": 1750
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco O",
+    "x": 276,
+    "y": 1830
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco P - Pós e Extensão",
+    "x": 261,
+    "y": 1750
+  }, {
+    "description": "Siga até o corredor entre os blocos O e N. Entre na primeira porta á sua direita",
+    "place": false,
+    "name": "Entradas N e O",
+    "x": 291,
+    "y": 1826
+  }, {
+    "place": true,
+    "name": "Bloco O",
+    "x": 276,
+    "y": 1830
+  }],
+  "distance": 11
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco P - Pós e Extensão",
+    "x": 261,
+    "y": 1750
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco Q",
+    "x": 156,
+    "y": 1725
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco P - Pós e Extensão",
+    "x": 261,
+    "y": 1750
+  }, {
+    "x": 197,
+    "y": 1767,
+    "description": "Caminhe em direção a porta de saída e vire à sua direita"
+  }, {
+    "x": 171,
+    "y": 1718,
+    "description": "Entre na próxima entrada à sua esquerda"
+  }, {
+    "place": true,
+    "name": "Bloco Q",
+    "x": 156,
+    "y": 1725
+  }],
+  "distance": 16
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco Q",
+    "x": 156,
+    "y": 1725
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco P - Pós e Extensão",
+    "x": 261,
+    "y": 1750
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco Q",
+    "x": 156,
+    "y": 1725
+  }, {
+    "x": 171,
+    "y": 1718,
+    "description": "Caminhe em direção a porta de saída e vire à sua direita"
+  }, {
+    "x": 197,
+    "y": 1767,
+    "description": "Siga em direção ao prédio a sua esquerda"
+  }, {
+    "description": "Acesse a porta de entrada",
+    "place": true,
+    "name": "Bloco P - Pós e Extensão",
+    "x": 261,
+    "y": 1750
+  }],
+  "distance": 16
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco Q",
+    "x": 156,
+    "y": 1725
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Pátio bloco Z",
+    "x": 284,
+    "y": 1667
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco Q",
+    "x": 156,
+    "y": 1725
+  }, {
+    "description": "Caminhe em direção a porta de saída e siga em direção ao estacionamento à sua frente",
+    "place": false,
+    "name": "Pátio bloco Z",
+    "x": 284,
+    "y": 1667
+  }],
+  "distance": 17
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Pátio bloco Z",
+    "x": 284,
+    "y": 1667
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco Q",
+    "x": 156,
+    "y": 1725
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Pátio bloco Z",
+    "x": 284,
+    "y": 1667
+  }, {
+    "description": "Atravesse todo o pátio e siga em direção ao bloco Q",
+    "place": true,
+    "name": "Bloco Q",
+    "x": 156,
+    "y": 1725
+  }],
+  "distance": 17
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Pátio bloco Z",
+    "x": 284,
+    "y": 1667
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco Apoio Logístico",
+    "x": 447,
+    "y": 1533
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Pátio bloco Z",
+    "x": 284,
+    "y": 1667
+  }, {
+    "x": 345,
+    "y": 1620,
+    "description": "Caminhe em direção ao DCE"
+  }, {
+    "description": "Continue andando pelo caminho em direção ao bloco de Apoio Logístico",
+    "place": true,
+    "name": "Bloco Apoio Logístico",
+    "x": 447,
+    "y": 1533
+  }],
+  "distance": 25
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Pátio bloco Z",
+    "x": 284,
+    "y": 1667
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco Z",
+    "x": 258,
+    "y": 1629
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Pátio bloco Z",
+    "x": 284,
+    "y": 1667
+  }, {
+    "place": true,
+    "name": "Bloco Z",
+    "x": 258,
+    "y": 1629
+  }],
+  "distance": 5
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco Z",
+    "x": 258,
+    "y": 1629
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Pátio bloco Z",
+    "x": 284,
+    "y": 1667
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco Z",
+    "x": 258,
+    "y": 1629
+  }, {
+    "description": "Caminhe me direção ao pátio externo",
+    "place": false,
+    "name": "Pátio bloco Z",
+    "x": 284,
+    "y": 1667
+  }],
+  "distance": 5
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco N",
+    "x": 320,
+    "y": 1814
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco O",
+    "x": 276,
+    "y": 1830
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco N",
+    "x": 320,
+    "y": 1814
+  }, {
+    "description": "Siga até o corredor entre os blocos O e N. Entre na primeira porta á sua direita",
+    "place": false,
+    "name": "Entradas N e O",
+    "x": 291,
+    "y": 1826
+  }, {
+    "place": true,
+    "name": "Bloco O",
+    "x": 276,
+    "y": 1830
+  }],
+  "distance": 4
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco N",
+    "x": 320,
+    "y": 1814
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Acesso N e P",
+    "x": 320,
+    "y": 1726
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco N",
+    "x": 320,
+    "y": 1814
+  }, {
+    "description": "Caminhe em direção a porta de saída e vire à sua esquerda",
+    "place": false,
+    "name": "Entrada N",
+    "x": 347,
+    "y": 1803
+  }, {
+    "description": "Caminhe até a saída para o pátio",
+    "place": false,
+    "name": "Acesso N e P",
+    "x": 320,
+    "y": 1726
+  }],
+  "distance": 13
+}, {
+  "originNode": {
+    "place": true,
+    "name": "Bloco N",
+    "x": 320,
+    "y": 1814
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina NLM",
+    "x": 359,
+    "y": 1836
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "Bloco N",
+    "x": 320,
+    "y": 1814
+  }, {
+    "description": "Caminhe em direção a porta de saída e vire à sua direita",
+    "place": false,
+    "name": "Entrada N",
+    "x": 347,
+    "y": 1803
+  }, {
+    "description": "Caminhe até a próxima esquina",
+    "place": false,
+    "name": "Esquina NLM",
+    "x": 359,
+    "y": 1836
+  }],
+  "distance": 7
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina NLM",
+    "x": 359,
+    "y": 1836
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco N",
+    "x": 320,
+    "y": 1814
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina NLM",
+    "x": 359,
+    "y": 1836
+  }, {
+    "description": "Siga em direção ao corredor coberto, e entre na primeira porta à sua esquerda",
+    "place": false,
+    "name": "Entrada N",
+    "x": 347,
+    "y": 1803
+  }, {
+    "place": true,
+    "name": "Bloco N",
+    "x": 320,
+    "y": 1814
+  }],
+  "distance": 7
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Acesso N e P",
+    "x": 320,
+    "y": 1726
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco N",
+    "x": 320,
+    "y": 1814
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Acesso N e P",
+    "x": 320,
+    "y": 1726
+  }, {
+    "description": "Siga pelo corredor coberto até próxima porta à sua direita",
+    "place": false,
+    "name": "Entrada N",
+    "x": 347,
+    "y": 1803
+  }, {
+    "place": true,
+    "name": "Bloco N",
+    "x": 320,
+    "y": 1814
+  }],
+  "distance": 13
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina ONKL",
+    "x": 304,
+    "y": 1858
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco O",
+    "x": 276,
+    "y": 1830
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina ONKL",
+    "x": 304,
+    "y": 1858
+  }, {
+    "description": "Siga pelo caminho entre os blocos O e N. Entre na primeira porta à sua esquerda",
+    "place": false,
+    "name": "Entradas N e O",
+    "x": 291,
+    "y": 1826
+  }, {
+    "place": true,
+    "name": "Bloco O",
+    "x": 276,
+    "y": 1830
+  }],
+  "distance": 5
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina ONKL",
+    "x": 304,
+    "y": 1858
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco K",
+    "x": 297,
+    "y": 1909
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina ONKL",
+    "x": 304,
+    "y": 1858
+  }, {
+    "description": "Siga pelo corredor entre os blocos K e M. Entre na primeira porta á sua direita",
+    "place": false,
+    "name": "Entradas K",
+    "x": 320,
+    "y": 1902
+  }, {
+    "place": true,
+    "name": "Bloco K",
+    "x": 297,
+    "y": 1909
+  }],
+  "distance": 8
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina KLJ",
+    "x": 336,
+    "y": 1938
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco K",
+    "x": 297,
+    "y": 1909
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina KLJ",
+    "x": 336,
+    "y": 1938
+  }, {
+    "description": "Siga pelo corredor entre os blocos K e M. Entre na primeira porta á sua esquerda",
+    "place": false,
+    "name": "Entradas K",
+    "x": 320,
+    "y": 1902
+  }, {
+    "place": true,
+    "name": "Bloco K",
+    "x": 297,
+    "y": 1909
+  }],
+  "distance": 7
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Chegada L e M",
+    "x": 366,
+    "y": 1850
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco L",
+    "x": 398,
+    "y": 1870
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Chegada L e M",
+    "x": 366,
+    "y": 1850
+  }, {
+    "description": "Caminhe pelo caminho entre os blocos M e L e entre na próxima porta à sua esquerda",
+    "place": false,
+    "name": "Entradas L e M",
+    "x": 376,
+    "y": 1878
+  }, {
+    "place": true,
+    "name": "Bloco L",
+    "x": 398,
+    "y": 1870
+  }],
+  "distance": 5
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina LMJ",
+    "x": 391,
+    "y": 1916
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco L",
+    "x": 398,
+    "y": 1870
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina LMJ",
+    "x": 391,
+    "y": 1916
+  }, {
+    "description": "Caminhe pelo caminho entre os blocos M e L e entre na próxima porta à sua direita",
+    "place": false,
+    "name": "Entradas L e M",
+    "x": 376,
+    "y": 1878
+  }, {
+    "place": true,
+    "name": "Bloco L",
+    "x": 398,
+    "y": 1870
+  }],
+  "distance": 7
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Chegada L e M",
+    "x": 366,
+    "y": 1850
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco M",
+    "x": 354,
+    "y": 1887
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Chegada L e M",
+    "x": 366,
+    "y": 1850
+  }, {
+    "description": "Caminhe pelo caminho entre os blocos M e L e entre na próxima porta à sua direita",
+    "place": false,
+    "name": "Entradas L e M",
+    "x": 376,
+    "y": 1878
+  }, {
+    "place": true,
+    "name": "Bloco M",
+    "x": 354,
+    "y": 1887
+  }],
+  "distance": 5
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina LMJ",
+    "x": 391,
+    "y": 1916
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco M",
+    "x": 354,
+    "y": 1887
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina LMJ",
+    "x": 391,
+    "y": 1916
+  }, {
+    "description": "Caminhe pelo caminho entre os blocos M e L e entre na próxima porta à sua esquerda",
+    "place": false,
+    "name": "Entradas L e M",
+    "x": 376,
+    "y": 1878
+  }, {
+    "place": true,
+    "name": "Bloco M",
+    "x": 354,
+    "y": 1887
+  }],
+  "distance": 7
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina HIJ",
+    "x": 420,
+    "y": 1988
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco G",
+    "x": 339,
+    "y": 2018
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina HIJ",
+    "x": 420,
+    "y": 1988
+  }, {
+    "description": "Caminhe pelo corredor paralelo aos blocos H e J e entre na porta à frente",
+    "place": true,
+    "name": "Bloco G",
+    "x": 339,
+    "y": 2018
+  }],
+  "distance": 10
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina KLJ",
+    "x": 336,
+    "y": 1938
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco G",
+    "x": 339,
+    "y": 2018
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina KLJ",
+    "x": 336,
+    "y": 1938
+  }, {
+    "description": "Caminhe pelo corredor paralelo ao bloco J e entre na primeira entrada à sua direita",
+    "place": false,
+    "name": "Esquina HGJ",
+    "x": 364,
+    "y": 2011
+  }, {
+    "place": true,
+    "name": "Bloco G",
+    "x": 339,
+    "y": 2018
+  }],
+  "distance": 12
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina DEH",
+    "x": 395,
+    "y": 2089
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco G",
+    "x": 339,
+    "y": 2018
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina DEH",
+    "x": 395,
+    "y": 2089
+  }, {
+    "description": "Caminhe pelo corredor paralelo ao bloco H e entre na primeira entrada à sua esquerda",
+    "place": false,
+    "name": "Esquina HGJ",
+    "x": 364,
+    "y": 2011
+  }, {
+    "place": true,
+    "name": "Bloco G",
+    "x": 339,
+    "y": 2018
+  }],
+  "distance": 13
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Chegada I e J",
+    "x": 403,
+    "y": 1944
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco J",
+    "x": 385,
+    "y": 1962
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Chegada I e J",
+    "x": 403,
+    "y": 1944
+  }, {
+    "description": "Entre na porta à sua direita",
+    "place": false,
+    "name": "Entrada J",
+    "x": 406,
+    "y": 1954
+  }, {
+    "place": true,
+    "name": "Bloco J",
+    "x": 385,
+    "y": 1962
+  }],
+  "distance": 3
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina HIJ",
+    "x": 420,
+    "y": 1988
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco J",
+    "x": 385,
+    "y": 1962
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina HIJ",
+    "x": 420,
+    "y": 1988
+  }, {
+    "description": "Siga pelo corredor entre os blocos I e J, e entre na primeira porta à sua esquerda",
+    "place": false,
+    "name": "Entrada J",
+    "x": 406,
+    "y": 1954
+  }, {
+    "place": true,
+    "name": "Bloco J",
+    "x": 385,
+    "y": 1962
+  }],
+  "distance": 6
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Chegada I e J",
+    "x": 403,
+    "y": 1944
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco I",
+    "x": 442,
+    "y": 1980
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Chegada I e J",
+    "x": 403,
+    "y": 1944
+  }, {
+    "description": "Caminhe pelo corredor que passa em frente ao bloco J, entre na primeira porta à sua esquerda",
+    "place": false,
+    "name": "Esquina HIJ",
+    "x": 420,
+    "y": 1988
+  }, {
+    "place": true,
+    "name": "Bloco I",
+    "x": 442,
+    "y": 1980
+  }],
+  "distance": 7
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Chegada H",
+    "x": 441,
+    "y": 2041
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco I",
+    "x": 442,
+    "y": 1980
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Chegada H",
+    "x": 441,
+    "y": 2041
+  }, {
+    "description": "Caminhe pelo corredor que passa em frente ao bloco H, entre na primeira porta à sua direita",
+    "place": false,
+    "name": "Esquina HIJ",
+    "x": 420,
+    "y": 1988
+  }, {
+    "place": true,
+    "name": "Bloco I",
+    "x": 442,
+    "y": 1980
+  }],
+  "distance": 9
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina HGJ",
+    "x": 364,
+    "y": 2011
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco I",
+    "x": 442,
+    "y": 1980
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina HGJ",
+    "x": 364,
+    "y": 2011
+  }, {
+    "description": "Caminhe pelo corredor entre os blocos H e J e entre na entrada a sua frente",
+    "place": true,
+    "name": "Bloco I",
+    "x": 442,
+    "y": 1980
+  }],
+  "distance": 10
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Chegada H",
+    "x": 441,
+    "y": 2041
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco H",
+    "x": 412,
+    "y": 2032
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Chegada H",
+    "x": 441,
+    "y": 2041
+  }, {
+    "description": "Siga pelo corredor do bloco H e entre na próxima entrada a sua esquerda",
+    "place": false,
+    "name": "Entrada H",
+    "x": 433,
+    "y": 2024
+  }, {
+    "place": true,
+    "name": "Bloco H",
+    "x": 412,
+    "y": 2032
+  }],
+  "distance": 4
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina HIJ",
+    "x": 420,
+    "y": 1988
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco H",
+    "x": 412,
+    "y": 2032
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina HIJ",
+    "x": 420,
+    "y": 1988
+  }, {
+    "description": "Siga pelo corredor paralelo ao bloco H e entre na próxima entrada a sua direita",
+    "place": false,
+    "name": "Entrada H",
+    "x": 433,
+    "y": 2024
+  }, {
+    "place": true,
+    "name": "Bloco H",
+    "x": 412,
+    "y": 2032
+  }],
+  "distance": 6
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Saída Biblioteca para Blocos",
+    "x": 588,
+    "y": 1983
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Biblioteca",
+    "x": 700,
+    "y": 1956
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Saída Biblioteca para Blocos",
+    "x": 588,
+    "y": 1983
+  }, {
+    "x": 626,
+    "y": 1996,
+    "description": "Caminhe através do prédio em direção a entrada frontal"
+  }, {
+    "place": true,
+    "name": "Biblioteca",
+    "x": 700,
+    "y": 1956
+  }],
+  "distance": 15
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina BEF",
+    "x": 473,
+    "y": 2121
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco F",
+    "x": 483,
+    "y": 2085
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina BEF",
+    "x": 473,
+    "y": 2121
+  }, {
+    "description": "Caminhe entre os blocos E e F e entre na próxima entrada a sua direita",
+    "place": false,
+    "name": "Entrada F",
+    "x": 462,
+    "y": 2094
+  }, {
+    "place": true,
+    "name": "Bloco F",
+    "x": 483,
+    "y": 2085
+  }],
+  "distance": 5
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina EFH",
+    "x": 451,
+    "y": 2067
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco F",
+    "x": 483,
+    "y": 2085
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina EFH",
+    "x": 451,
+    "y": 2067
+  }, {
+    "description": "Caminhe entre os blocos E e F e entre na próxima entrada a sua esquerda",
+    "place": false,
+    "name": "Entrada F",
+    "x": 462,
+    "y": 2094
+  }, {
+    "place": true,
+    "name": "Bloco F",
+    "x": 483,
+    "y": 2085
+  }],
+  "distance": 5
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina BC",
+    "x": 504,
+    "y": 2199
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco B",
+    "x": 470,
+    "y": 2172
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina BC",
+    "x": 504,
+    "y": 2199
+  }, {
+    "description": "Caminhe entre os blocos B e C e entre na próxima entrada a sua esquerda",
+    "place": false,
+    "name": "Entrada B",
+    "x": 490,
+    "y": 2165
+  }, {
+    "place": true,
+    "name": "Bloco B",
+    "x": 470,
+    "y": 2172
+  }],
+  "distance": 6
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Chegada C",
+    "x": 539,
+    "y": 2127
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco C",
+    "x": 532,
+    "y": 2174
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Chegada C",
+    "x": 539,
+    "y": 2127
+  }, {
+    "x": 554,
+    "y": 2166,
+    "description": "Caminhe pela lateral do bloco C e entre na entrada a sua direita"
+  }, {
+    "place": true,
+    "name": "Bloco C",
+    "x": 532,
+    "y": 2174
+  }],
+  "distance": 7
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Chegada C",
+    "x": 539,
+    "y": 2127
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Hall de Entrada",
+    "x": 767,
+    "y": 2040
+  },
+  "reducedMobility": false,
+  "excerpts": [{
+    "place": false,
+    "name": "Chegada C",
+    "x": 539,
+    "y": 2127
+  }, {
+    "x": 639,
+    "y": 2101,
+    "description": "Atravesse todo estacionamento até o prédio a sua frente"
+  }, {
+    "place": true,
+    "name": "Hall de Entrada",
+    "x": 767,
+    "y": 2040
+  }],
+  "distance": 29
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina ABDE",
+    "x": 416,
+    "y": 2143
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco D",
+    "x": 384,
+    "y": 2125
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina ABDE",
+    "x": 416,
+    "y": 2143
+  }, {
+    "description": "Entre na próxima entrada à sua esquerda",
+    "place": false,
+    "name": "Entrada DE",
+    "x": 406,
+    "y": 2116
+  }, {
+    "place": true,
+    "name": "Bloco D",
+    "x": 384,
+    "y": 2125
+  }],
+  "distance": 5
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina DEH",
+    "x": 395,
+    "y": 2089
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco D",
+    "x": 384,
+    "y": 2125
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina DEH",
+    "x": 395,
+    "y": 2089
+  }, {
+    "description": "Entre na próxima entrada a sua direita",
+    "place": false,
+    "name": "Entrada DE",
+    "x": 406,
+    "y": 2116
+  }, {
+    "place": true,
+    "name": "Bloco D",
+    "x": 384,
+    "y": 2125
+  }],
+  "distance": 5
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina ABDE",
+    "x": 416,
+    "y": 2143
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco E",
+    "x": 428,
+    "y": 2107
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina ABDE",
+    "x": 416,
+    "y": 2143
+  }, {
+    "description": "Entre na próxima entrada à sua direita",
+    "place": false,
+    "name": "Entrada DE",
+    "x": 406,
+    "y": 2116
+  }, {
+    "place": true,
+    "name": "Bloco E",
+    "x": 428,
+    "y": 2107
+  }],
+  "distance": 5
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina DEH",
+    "x": 395,
+    "y": 2089
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco E",
+    "x": 428,
+    "y": 2107
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina DEH",
+    "x": 395,
+    "y": 2089
+  }, {
+    "description": "Entre na próxima entrada a sua esquerda",
+    "place": false,
+    "name": "Entrada DE",
+    "x": 406,
+    "y": 2116
+  }, {
+    "place": true,
+    "name": "Bloco E",
+    "x": 428,
+    "y": 2107
+  }],
+  "distance": 5
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina AB",
+    "x": 449,
+    "y": 2222
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco A",
+    "x": 431,
+    "y": 2216
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina AB",
+    "x": 449,
+    "y": 2222
+  }, {
+    "x": 444,
+    "y": 2212,
+    "description": "Entre na próxima entrada a sua esquerda"
+  }, {
+    "place": true,
+    "name": "Bloco A",
+    "x": 431,
+    "y": 2216
+  }],
+  "distance": 2
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina ABDE",
+    "x": 416,
+    "y": 2143
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Bloco A",
+    "x": 431,
+    "y": 2216
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina ABDE",
+    "x": 416,
+    "y": 2143
+  }, {
+    "x": 444,
+    "y": 2212,
+    "description": "Siga pelo corredor e entre na próxima entrada a sua direita"
+  }, {
+    "place": true,
+    "name": "Bloco A",
+    "x": 431,
+    "y": 2216
+  }],
+  "distance": 10
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Entre Centac e Blocos",
+    "x": 453,
+    "y": 1818
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Centac",
+    "x": 540,
+    "y": 1792
+  },
+  "reducedMobility": false,
+  "excerpts": [{
+    "place": false,
+    "name": "Entre Centac e Blocos",
+    "x": 453,
+    "y": 1818
+  }, {
+    "description": "Entre na próxima porta a sua frente",
+    "place": true,
+    "name": "Centac",
+    "x": 540,
+    "y": 1792
+  }],
+  "distance": 11
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Entre Centac e Blocos",
+    "x": 453,
+    "y": 1818
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Entre XXI-C e Blocos",
+    "x": 375,
+    "y": 1744
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Entre Centac e Blocos",
+    "x": 453,
+    "y": 1818
+  }, {
+    "x": 437,
+    "y": 1783,
+    "description": "TODO"
+  }, {
+    "x": 388,
+    "y": 1768,
+    "description": "TODO"
+  }, {
+    "description": "TODO",
+    "place": false,
+    "name": "Entre XXI-C e Blocos",
+    "x": 375,
+    "y": 1744
+  }],
+  "distance": 13
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Entre XXI-C e Blocos",
+    "x": 375,
+    "y": 1744
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "XXI-C",
+    "x": 474,
+    "y": 1637
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Entre XXI-C e Blocos",
+    "x": 375,
+    "y": 1744
+  }, {
+    "x": 399,
+    "y": 1713,
+    "description": "Se dirija em direção ao restaurante"
+  }, {
+    "x": 464,
+    "y": 1682,
+    "description": "Percorra todo o corredor passando pelo restaurante"
+  }, {
+    "description": "Ao chegar em frente a livraria você está no XII-C",
+    "place": true,
+    "name": "XXI-C",
+    "x": 474,
+    "y": 1637
+  }],
+  "distance": 18
+}, {
+  "originNode": {
+    "place": true,
+    "name": "XXI-C",
+    "x": 474,
+    "y": 1637
+  },
+  "destinationNode": {
+    "place": true,
+    "name": "Centac",
+    "x": 540,
+    "y": 1792
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": true,
+    "name": "XXI-C",
+    "x": 474,
+    "y": 1637
+  }, {
+    "x": 464,
+    "y": 1682,
+    "description": "Passe em frente a livraria e entre no primeiro caminho à sua esquerda"
+  }, {
+    "x": 454,
+    "y": 1688
+  }, {
+    "x": 499,
+    "y": 1771,
+    "description": "Caminhe em direção a porta a sua frente"
+  }, {
+    "place": true,
+    "name": "Centac",
+    "x": 540,
+    "y": 1792
+  }],
+  "distance": 22
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Entre XXI-C e Blocos",
+    "x": 375,
+    "y": 1744
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Entre Centac e Blocos",
+    "x": 453,
+    "y": 1818
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Entre XXI-C e Blocos",
+    "x": 375,
+    "y": 1744
+  }, {
+    "x": 388,
+    "y": 1768,
+    "description": "TODO"
+  }, {
+    "x": 437,
+    "y": 1783,
+    "description": "TODO"
+  }, {
+    "description": "TODO",
+    "place": false,
+    "name": "Entre Centac e Blocos",
+    "x": 453,
+    "y": 1818
+  }],
+  "distance": 13
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Entre Centac e Blocos",
+    "x": 453,
+    "y": 1818
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Meio Caminho Centac",
+    "x": 488,
+    "y": 1911
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Entre Centac e Blocos",
+    "x": 453,
+    "y": 1818
+  }, {
+    "description": "Atravesse a Praça do Estudante e siga pelo caminho entre o jardim",
+    "place": false,
+    "name": "Meio Caminho Centac",
+    "x": 488,
+    "y": 1911
+  }],
+  "distance": 12
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Meio Caminho Centac",
+    "x": 488,
+    "y": 1911
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Entre Centac e Blocos",
+    "x": 453,
+    "y": 1818
+  },
+  "reducedMobility": false,
+  "excerpts": [{
+    "place": false,
+    "name": "Meio Caminho Centac",
+    "x": 488,
+    "y": 1911
+  }, {
+    "description": "Suba o caminho em direção a Praça do Estudante",
+    "place": false,
+    "name": "Entre Centac e Blocos",
+    "x": 453,
+    "y": 1818
+  }],
+  "distance": 12
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Entre Centac e Blocos",
+    "x": 453,
+    "y": 1818
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Chegada L e M",
+    "x": 366,
+    "y": 1850
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Entre Centac e Blocos",
+    "x": 453,
+    "y": 1818
+  }, {
+    "description": "Siga pelo caminho paralelo ao bloco L em direção ao bloco M",
+    "place": false,
+    "name": "Chegada L e M",
+    "x": 366,
+    "y": 1850
+  }],
+  "distance": 11
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Chegada L e M",
+    "x": 366,
+    "y": 1850
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Entre Centac e Blocos",
+    "x": 453,
+    "y": 1818
+  },
+  "reducedMobility": false,
+  "excerpts": [{
+    "place": false,
+    "name": "Chegada L e M",
+    "x": 366,
+    "y": 1850
+  }, {
+    "description": "Siga pelo caminho paralelo ao bloco L em direção ao prédio do Centac",
+    "place": false,
+    "name": "Entre Centac e Blocos",
+    "x": 453,
+    "y": 1818
+  }],
+  "distance": 11
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Meio Caminho Centac",
+    "x": 488,
+    "y": 1911
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Chegada C",
+    "x": 539,
+    "y": 2127
+  },
+  "reducedMobility": false,
+  "excerpts": [{
+    "place": false,
+    "name": "Meio Caminho Centac",
+    "x": 488,
+    "y": 1911
+  }, {
+    "description": "Caminhe em direção ao estacionamento",
+    "place": false,
+    "name": "Chegada Ciblioteca para Blocos",
+    "x": 527,
+    "y": 2009
+  }, {
+    "description": "Atravesse o estacionamento em direção ao bloco C",
+    "place": false,
+    "name": "Chegada C",
+    "x": 539,
+    "y": 2127
+  }],
+  "distance": 27
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Chegada C",
+    "x": 539,
+    "y": 2127
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Meio Caminho Centac",
+    "x": 488,
+    "y": 1911
+  },
+  "reducedMobility": false,
+  "excerpts": [{
+    "place": false,
+    "name": "Chegada C",
+    "x": 539,
+    "y": 2127
+  }, {
+    "description": "Atravesse o estacionamento em direção ao prédio da biblioteca",
+    "place": false,
+    "name": "Chegada Ciblioteca para Blocos",
+    "x": 527,
+    "y": 2009
+  }, {
+    "description": "Suba o caminho que leva á Praça do Estudante",
+    "place": false,
+    "name": "Meio Caminho Centac",
+    "x": 488,
+    "y": 1911
+  }],
+  "distance": 27
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Meio Caminho Centac",
+    "x": 488,
+    "y": 1911
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Chegada H",
+    "x": 441,
+    "y": 2041
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Meio Caminho Centac",
+    "x": 488,
+    "y": 1911
+  }, {
+    "description": "Caminhe em direção ao estacionamento",
+    "place": false,
+    "name": "Chegada Ciblioteca para Blocos",
+    "x": 527,
+    "y": 2009
+  }, {
+    "description": "Entre à direita no caminho, antes de chegar ao estacionamento",
+    "place": false,
+    "name": "Chegada H",
+    "x": 441,
+    "y": 2041
+  }],
+  "distance": 24
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Chegada H",
+    "x": 441,
+    "y": 2041
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Meio Caminho Centac",
+    "x": 488,
+    "y": 1911
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Chegada H",
+    "x": 441,
+    "y": 2041
+  }, {
+    "description": "Siga em direção ao prédio da Biblioteca. Entre no primeiro caminho a esquerda",
+    "place": false,
+    "name": "Chegada Ciblioteca para Blocos",
+    "x": 527,
+    "y": 2009
+  }, {
+    "description": "Suba o caminho que leva á Praça do Estudante",
+    "place": false,
+    "name": "Meio Caminho Centac",
+    "x": 488,
+    "y": 1911
+  }],
+  "distance": 24
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Meio Caminho Centac",
+    "x": 488,
+    "y": 1911
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Saída Biblioteca para Blocos",
+    "x": 588,
+    "y": 1983
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Meio Caminho Centac",
+    "x": 488,
+    "y": 1911
+  }, {
+    "description": "Caminhe em direção ao estacionamento",
+    "place": false,
+    "name": "Chegada Ciblioteca para Blocos",
+    "x": 527,
+    "y": 2009
+  }, {
+    "description": "Entre à esquerda no caminho, antes de chegar ao estacionamento. Siga até o prédio à frente",
+    "place": false,
+    "name": "Saída Biblioteca para Blocos",
+    "x": 588,
+    "y": 1983
+  }],
+  "distance": 21
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Saída Biblioteca para Blocos",
+    "x": 588,
+    "y": 1983
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Meio Caminho Centac",
+    "x": 488,
+    "y": 1911
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Saída Biblioteca para Blocos",
+    "x": 588,
+    "y": 1983
+  }, {
+    "description": "Siga em direção ao estacionamento. Entre no primeiro caminho a direita",
+    "place": false,
+    "name": "Chegada Ciblioteca para Blocos",
+    "x": 527,
+    "y": 2009
+  }, {
+    "description": "Suba o caminho que leva á Praça do Estudante",
+    "place": false,
+    "name": "Meio Caminho Centac",
+    "x": 488,
+    "y": 1911
+  }],
+  "distance": 21
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Meio Caminho Centac",
+    "x": 488,
+    "y": 1911
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Chegada I e J",
+    "x": 403,
+    "y": 1944
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Meio Caminho Centac",
+    "x": 488,
+    "y": 1911
+  }, {
+    "description": "Percorra o caminho entre os jardins, até o bloco J",
+    "place": false,
+    "name": "Chegada I e J",
+    "x": 403,
+    "y": 1944
+  }],
+  "distance": 11
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Chegada I e J",
+    "x": 403,
+    "y": 1944
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Meio Caminho Centac",
+    "x": 488,
+    "y": 1911
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Chegada I e J",
+    "x": 403,
+    "y": 1944
+  }, {
+    "description": "Caminhe pelo caminho entre os jardins, em direção ao pátio externo",
+    "place": false,
+    "name": "Meio Caminho Centac",
+    "x": 488,
+    "y": 1911
+  }],
+  "distance": 11
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Saída Biblioteca para Blocos",
+    "x": 588,
+    "y": 1983
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Chegada C",
+    "x": 539,
+    "y": 2127
+  },
+  "reducedMobility": false,
+  "excerpts": [{
+    "place": false,
+    "name": "Saída Biblioteca para Blocos",
+    "x": 588,
+    "y": 1983
+  }, {
+    "description": "Caminhe em direção ao pátio",
+    "place": false,
+    "name": "Chegada Ciblioteca para Blocos",
+    "x": 527,
+    "y": 2009
+  }, {
+    "description": "Atravesse o estacionamento até o bloco C",
+    "place": false,
+    "name": "Chegada C",
+    "x": 539,
+    "y": 2127
+  }],
+  "distance": 22
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Chegada C",
+    "x": 539,
+    "y": 2127
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Saída Biblioteca para Blocos",
+    "x": 588,
+    "y": 1983
+  },
+  "reducedMobility": false,
+  "excerpts": [{
+    "place": false,
+    "name": "Chegada C",
+    "x": 539,
+    "y": 2127
+  }, {
+    "description": "Atravesse o estacionamento até o prédio da biblioteca",
+    "place": false,
+    "name": "Chegada Ciblioteca para Blocos",
+    "x": 527,
+    "y": 2009
+  }, {
+    "description": "Siga até o prédio à frente",
+    "place": false,
+    "name": "Saída Biblioteca para Blocos",
+    "x": 588,
+    "y": 1983
+  }],
+  "distance": 22
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Saída Biblioteca para Blocos",
+    "x": 588,
+    "y": 1983
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Chegada H",
+    "x": 441,
+    "y": 2041
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Saída Biblioteca para Blocos",
+    "x": 588,
+    "y": 1983
+  }, {
+    "description": "Caminhe em direção ao pátio",
+    "place": false,
+    "name": "Chegada Ciblioteca para Blocos",
+    "x": 527,
+    "y": 2009
+  }, {
+    "description": "Siga até o prédio à frente",
+    "place": false,
+    "name": "Chegada H",
+    "x": 441,
+    "y": 2041
+  }],
+  "distance": 19
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Chegada H",
+    "x": 441,
+    "y": 2041
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Saída Biblioteca para Blocos",
+    "x": 588,
+    "y": 1983
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Chegada H",
+    "x": 441,
+    "y": 2041
+  }, {
+    "description": "Caminhe em direção ao pátio externo",
+    "place": false,
+    "name": "Chegada Ciblioteca para Blocos",
+    "x": 527,
+    "y": 2009
+  }, {
+    "description": "Siga até o prédio à frente",
+    "place": false,
+    "name": "Saída Biblioteca para Blocos",
+    "x": 588,
+    "y": 1983
+  }],
+  "distance": 19
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina EFH",
+    "x": 451,
+    "y": 2067
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Chegada H",
+    "x": 441,
+    "y": 2041
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina EFH",
+    "x": 451,
+    "y": 2067
+  }, {
+    "description": "Siga em direção ao bloco H",
+    "place": false,
+    "name": "Chegada H",
+    "x": 441,
+    "y": 2041
+  }],
+  "distance": 3
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Chegada H",
+    "x": 441,
+    "y": 2041
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina EFH",
+    "x": 451,
+    "y": 2067
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Chegada H",
+    "x": 441,
+    "y": 2041
+  }, {
+    "description": "Siga em direção aos bloco E e F",
+    "place": false,
+    "name": "Esquina EFH",
+    "x": 451,
+    "y": 2067
+  }],
+  "distance": 3
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina BC",
+    "x": 504,
+    "y": 2199
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina BCE",
+    "x": 484,
+    "y": 2148
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina BC",
+    "x": 504,
+    "y": 2199
+  }, {
+    "description": "Siga entre os blocos B e C",
+    "place": false,
+    "name": "Esquina BCE",
+    "x": 484,
+    "y": 2148
+  }],
+  "distance": 6
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina BCE",
+    "x": 484,
+    "y": 2148
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina BC",
+    "x": 504,
+    "y": 2199
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina BCE",
+    "x": 484,
+    "y": 2148
+  }, {
+    "description": "Siga entre os blocos B e C",
+    "place": false,
+    "name": "Esquina BC",
+    "x": 504,
+    "y": 2199
+  }],
+  "distance": 6
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina BCE",
+    "x": 484,
+    "y": 2148
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Chegada C",
+    "x": 539,
+    "y": 2127
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina BCE",
+    "x": 484,
+    "y": 2148
+  }, {
+    "description": "Caminhe em direção ao estacionamento",
+    "place": false,
+    "name": "Chegada C",
+    "x": 539,
+    "y": 2127
+  }],
+  "distance": 7
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Chegada C",
+    "x": 539,
+    "y": 2127
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina BCE",
+    "x": 484,
+    "y": 2148
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Chegada C",
+    "x": 539,
+    "y": 2127
+  }, {
+    "description": "Caminhe em direção ao bloco B",
+    "place": false,
+    "name": "Esquina BCE",
+    "x": 484,
+    "y": 2148
+  }],
+  "distance": 7
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Entre XXI-C e Blocos",
+    "x": 375,
+    "y": 1744
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Acesso N e P",
+    "x": 320,
+    "y": 1726
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Entre XXI-C e Blocos",
+    "x": 375,
+    "y": 1744
+  }, {
+    "x": 334,
+    "y": 1718,
+    "description": "Acesse a entrada ao lado do monumento"
+  }, {
+    "x": 322,
+    "y": 1718,
+    "description": "Acesse a entrada ao lado do monumento"
+  }, {
+    "description": "Acesse a entrada ao lado do monumento",
+    "place": false,
+    "name": "Acesso N e P",
+    "x": 320,
+    "y": 1726
+  }],
+  "distance": 8
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Acesso N e P",
+    "x": 320,
+    "y": 1726
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Entre XXI-C e Blocos",
+    "x": 375,
+    "y": 1744
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Acesso N e P",
+    "x": 320,
+    "y": 1726
+  }, {
+    "x": 322,
+    "y": 1718,
+    "description": "Saia em direção ao Parque do Estudante"
+  }, {
+    "x": 334,
+    "y": 1718,
+    "description": "Saia em direção ao Parque do Estudante"
+  }, {
+    "description": "Saia em direção ao Parque do Estudante",
+    "place": false,
+    "name": "Entre XXI-C e Blocos",
+    "x": 375,
+    "y": 1744
+  }],
+  "distance": 8
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Pátio bloco Z",
+    "x": 284,
+    "y": 1667
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Entre XXI-C e Blocos",
+    "x": 375,
+    "y": 1744
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Pátio bloco Z",
+    "x": 284,
+    "y": 1667
+  }, {
+    "description": "Caminhe através do pátio em direção ao restaurante do bloco XXI-C",
+    "place": false,
+    "name": "Entre XXI-C e Blocos",
+    "x": 375,
+    "y": 1744
+  }],
+  "distance": 14
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Entre XXI-C e Blocos",
+    "x": 375,
+    "y": 1744
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Pátio bloco Z",
+    "x": 284,
+    "y": 1667
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Entre XXI-C e Blocos",
+    "x": 375,
+    "y": 1744
+  }, {
+    "description": "Contorne o restaurante e siga em direção ao estacionamento dos fundos",
+    "place": false,
+    "name": "Pátio bloco Z",
+    "x": 284,
+    "y": 1667
+  }],
+  "distance": 14
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina NLM",
+    "x": 359,
+    "y": 1836
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina ONKL",
+    "x": 304,
+    "y": 1858
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina NLM",
+    "x": 359,
+    "y": 1836
+  }, {
+    "description": "Caminhe pelo corredor paralelo ao bloco N",
+    "place": false,
+    "name": "Esquina ONKL",
+    "x": 304,
+    "y": 1858
+  }],
+  "distance": 7
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina ONKL",
+    "x": 304,
+    "y": 1858
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina NLM",
+    "x": 359,
+    "y": 1836
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina ONKL",
+    "x": 304,
+    "y": 1858
+  }, {
+    "description": "Caminhe pelo corredor paralelo ao bloco N",
+    "place": false,
+    "name": "Esquina NLM",
+    "x": 359,
+    "y": 1836
+  }],
+  "distance": 7
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina NLM",
+    "x": 359,
+    "y": 1836
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Acesso N e P",
+    "x": 320,
+    "y": 1726
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina NLM",
+    "x": 359,
+    "y": 1836
+  }, {
+    "description": "Caminhe passando por frente do bloco N e siga até a saída para o pátio",
+    "place": false,
+    "name": "Acesso N e P",
+    "x": 320,
+    "y": 1726
+  }],
+  "distance": 14
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Acesso N e P",
+    "x": 320,
+    "y": 1726
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina NLM",
+    "x": 359,
+    "y": 1836
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Acesso N e P",
+    "x": 320,
+    "y": 1726
+  }, {
+    "description": "Caminhe pelo corredor coberto passando por frente do bloco N",
+    "place": false,
+    "name": "Esquina NLM",
+    "x": 359,
+    "y": 1836
+  }],
+  "distance": 14
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina KLJ",
+    "x": 336,
+    "y": 1938
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina ONKL",
+    "x": 304,
+    "y": 1858
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina KLJ",
+    "x": 336,
+    "y": 1938
+  }, {
+    "description": "Caminhe pelo corredor paralelo entre os blocos K e M",
+    "place": false,
+    "name": "Esquina ONKL",
+    "x": 304,
+    "y": 1858
+  }],
+  "distance": 10
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina ONKL",
+    "x": 304,
+    "y": 1858
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina KLJ",
+    "x": 336,
+    "y": 1938
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina ONKL",
+    "x": 304,
+    "y": 1858
+  }, {
+    "description": "Caminhe pelo corredor paralelo entre os blocos K e M",
+    "place": false,
+    "name": "Esquina KLJ",
+    "x": 336,
+    "y": 1938
+  }],
+  "distance": 10
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina NLM",
+    "x": 359,
+    "y": 1836
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Chegada L e M",
+    "x": 366,
+    "y": 1850
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina NLM",
+    "x": 359,
+    "y": 1836
+  }, {
+    "description": "Siga pelo corredor em direção ao blocos L e M",
+    "place": false,
+    "name": "Chegada L e M",
+    "x": 366,
+    "y": 1850
+  }],
+  "distance": 1
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Chegada L e M",
+    "x": 366,
+    "y": 1850
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina NLM",
+    "x": 359,
+    "y": 1836
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Chegada L e M",
+    "x": 366,
+    "y": 1850
+  }, {
+    "description": "Siga pelo corredor do bloco N",
+    "place": false,
+    "name": "Esquina NLM",
+    "x": 359,
+    "y": 1836
+  }],
+  "distance": 1
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina LMJ",
+    "x": 391,
+    "y": 1916
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Chegada L e M",
+    "x": 366,
+    "y": 1850
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina LMJ",
+    "x": 391,
+    "y": 1916
+  }, {
+    "description": "Siga pelo corredor passando entre os corredores M e L",
+    "place": false,
+    "name": "Chegada L e M",
+    "x": 366,
+    "y": 1850
+  }],
+  "distance": 8
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Chegada L e M",
+    "x": 366,
+    "y": 1850
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina LMJ",
+    "x": 391,
+    "y": 1916
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Chegada L e M",
+    "x": 366,
+    "y": 1850
+  }, {
+    "description": "Siga pelo corredor passando entre os corredores M e L",
+    "place": false,
+    "name": "Esquina LMJ",
+    "x": 391,
+    "y": 1916
+  }],
+  "distance": 8
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina LMJ",
+    "x": 391,
+    "y": 1916
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina KLJ",
+    "x": 336,
+    "y": 1938
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina LMJ",
+    "x": 391,
+    "y": 1916
+  }, {
+    "description": "Caminhe pelo corredor entre os blocos J e M",
+    "place": false,
+    "name": "Esquina KLJ",
+    "x": 336,
+    "y": 1938
+  }],
+  "distance": 7
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina KLJ",
+    "x": 336,
+    "y": 1938
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina LMJ",
+    "x": 391,
+    "y": 1916
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina KLJ",
+    "x": 336,
+    "y": 1938
+  }, {
+    "description": "Caminhe pelo corredor entre os blocos J e M",
+    "place": false,
+    "name": "Esquina LMJ",
+    "x": 391,
+    "y": 1916
+  }],
+  "distance": 7
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina LMJ",
+    "x": 391,
+    "y": 1916
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Chegada I e J",
+    "x": 403,
+    "y": 1944
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina LMJ",
+    "x": 391,
+    "y": 1916
+  }, {
+    "description": "Siga em direção ao corredor do bloco J",
+    "place": false,
+    "name": "Chegada I e J",
+    "x": 403,
+    "y": 1944
+  }],
+  "distance": 3
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Chegada I e J",
+    "x": 403,
+    "y": 1944
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina LMJ",
+    "x": 391,
+    "y": 1916
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Chegada I e J",
+    "x": 403,
+    "y": 1944
+  }, {
+    "description": "Siga em direção aos blocos L e M",
+    "place": false,
+    "name": "Esquina LMJ",
+    "x": 391,
+    "y": 1916
+  }],
+  "distance": 3
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina BEF",
+    "x": 473,
+    "y": 2121
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina BCE",
+    "x": 484,
+    "y": 2148
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina BEF",
+    "x": 473,
+    "y": 2121
+  }, {
+    "description": "Siga em frente em direção a próxima esquina",
+    "place": false,
+    "name": "Esquina BCE",
+    "x": 484,
+    "y": 2148
+  }],
+  "distance": 3
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina BCE",
+    "x": 484,
+    "y": 2148
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina BEF",
+    "x": 473,
+    "y": 2121
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina BCE",
+    "x": 484,
+    "y": 2148
+  }, {
+    "description": "Caminhe em direção aos blocos E e F",
+    "place": false,
+    "name": "Esquina BEF",
+    "x": 473,
+    "y": 2121
+  }],
+  "distance": 3
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina BC",
+    "x": 504,
+    "y": 2199
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina AB",
+    "x": 449,
+    "y": 2222
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina BC",
+    "x": 504,
+    "y": 2199
+  }, {
+    "description": "Caminhe pelo corredor passando ao lado do bloco B",
+    "place": false,
+    "name": "Esquina AB",
+    "x": 449,
+    "y": 2222
+  }],
+  "distance": 7
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina AB",
+    "x": 449,
+    "y": 2222
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina BC",
+    "x": 504,
+    "y": 2199
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina AB",
+    "x": 449,
+    "y": 2222
+  }, {
+    "description": "Caminhe pelo corredor passando ao lado do bloco B",
+    "place": false,
+    "name": "Esquina BC",
+    "x": 504,
+    "y": 2199
+  }],
+  "distance": 7
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina AB",
+    "x": 449,
+    "y": 2222
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina ABDE",
+    "x": 416,
+    "y": 2143
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina AB",
+    "x": 449,
+    "y": 2222
+  }, {
+    "description": "Caminhe pelo corredor, passando em entre os A e B até a esquina",
+    "place": false,
+    "name": "Esquina ABDE",
+    "x": 416,
+    "y": 2143
+  }],
+  "distance": 10
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina ABDE",
+    "x": 416,
+    "y": 2143
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina AB",
+    "x": 449,
+    "y": 2222
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina ABDE",
+    "x": 416,
+    "y": 2143
+  }, {
+    "description": "Caminhe pelo corredor, passando em entre os A e B até a esquina",
+    "place": false,
+    "name": "Esquina AB",
+    "x": 449,
+    "y": 2222
+  }],
+  "distance": 10
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina ABDE",
+    "x": 416,
+    "y": 2143
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina BEF",
+    "x": 473,
+    "y": 2121
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina ABDE",
+    "x": 416,
+    "y": 2143
+  }, {
+    "description": "Siga pelo corredor paralelo ao bloco E",
+    "place": false,
+    "name": "Esquina BEF",
+    "x": 473,
+    "y": 2121
+  }],
+  "distance": 7
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina BEF",
+    "x": 473,
+    "y": 2121
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina ABDE",
+    "x": 416,
+    "y": 2143
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina BEF",
+    "x": 473,
+    "y": 2121
+  }, {
+    "description": "Siga pelo corredor paralelo ao bloco E",
+    "place": false,
+    "name": "Esquina ABDE",
+    "x": 416,
+    "y": 2143
+  }],
+  "distance": 7
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina DEH",
+    "x": 395,
+    "y": 2089
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina HGJ",
+    "x": 364,
+    "y": 2011
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina DEH",
+    "x": 395,
+    "y": 2089
+  }, {
+    "description": "Siga pelo corredor paralelo ao bloco H",
+    "place": false,
+    "name": "Esquina HGJ",
+    "x": 364,
+    "y": 2011
+  }],
+  "distance": 10
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina HGJ",
+    "x": 364,
+    "y": 2011
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina DEH",
+    "x": 395,
+    "y": 2089
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina HGJ",
+    "x": 364,
+    "y": 2011
+  }, {
+    "description": "Siga pelo corredor paralelo ao bloco H",
+    "place": false,
+    "name": "Esquina DEH",
+    "x": 395,
+    "y": 2089
+  }],
+  "distance": 10
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina KLJ",
+    "x": 336,
+    "y": 1938
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina HGJ",
+    "x": 364,
+    "y": 2011
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina KLJ",
+    "x": 336,
+    "y": 1938
+  }, {
+    "description": "Siga pelo corredor paralelo ao bloco J",
+    "place": false,
+    "name": "Esquina HGJ",
+    "x": 364,
+    "y": 2011
+  }],
+  "distance": 9
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina HGJ",
+    "x": 364,
+    "y": 2011
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina KLJ",
+    "x": 336,
+    "y": 1938
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina HGJ",
+    "x": 364,
+    "y": 2011
+  }, {
+    "description": "Siga pelo corredor paralelo ao bloco J",
+    "place": false,
+    "name": "Esquina KLJ",
+    "x": 336,
+    "y": 1938
+  }],
+  "distance": 9
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina DEH",
+    "x": 395,
+    "y": 2089
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina EFH",
+    "x": 451,
+    "y": 2067
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina DEH",
+    "x": 395,
+    "y": 2089
+  }, {
+    "description": "Siga pelo corredor paralelo ao bloco E",
+    "place": false,
+    "name": "Esquina EFH",
+    "x": 451,
+    "y": 2067
+  }],
+  "distance": 7
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina EFH",
+    "x": 451,
+    "y": 2067
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina DEH",
+    "x": 395,
+    "y": 2089
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina EFH",
+    "x": 451,
+    "y": 2067
+  }, {
+    "description": "Siga pelo corredor paralelo ao bloco E",
+    "place": false,
+    "name": "Esquina DEH",
+    "x": 395,
+    "y": 2089
+  }],
+  "distance": 7
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina HGJ",
+    "x": 364,
+    "y": 2011
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina HIJ",
+    "x": 420,
+    "y": 1988
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina HGJ",
+    "x": 364,
+    "y": 2011
+  }, {
+    "description": "Caminhe pelo corredor entre os blocos H e J",
+    "place": false,
+    "name": "Esquina HIJ",
+    "x": 420,
+    "y": 1988
+  }],
+  "distance": 7
+}, {
+  "originNode": {
+    "place": false,
+    "name": "Esquina HIJ",
+    "x": 420,
+    "y": 1988
+  },
+  "destinationNode": {
+    "place": false,
+    "name": "Esquina HGJ",
+    "x": 364,
+    "y": 2011
+  },
+  "reducedMobility": true,
+  "excerpts": [{
+    "place": false,
+    "name": "Esquina HIJ",
+    "x": 420,
+    "y": 1988
+  }, {
+    "description": "Caminhe pelo corredor entre os blocos H e J",
+    "place": false,
+    "name": "Esquina HGJ",
+    "x": 364,
+    "y": 2011
+  }],
+  "distance": 7
+}]
