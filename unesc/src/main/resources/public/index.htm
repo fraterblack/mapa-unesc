@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Unesc Maps - Betha 0.0.1</title>
+  <script src="assets/fabric.min.js"></script>
+  <link rel="stylesheet" href="assets/maps.css">
+  <link rel="stylesheet" href="assets/bootstrap/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm">
+        <form action="x">
+          <h5><i class="fas fa-search "></i> Busca Menor Caminho</h5>
+          <div class="form-group">
+            <label for=""><i class="fas fa-map-marker-alt text-primary"></i> Ponto de Partida</label>
+            <select name="" id="" class="form-control">
+              <option value="">Selecione</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for=""><i class="fas fa-map-marker-alt text-primary"></i> Ponto de Destino</label>
+            <select name="" id="" class="form-control">
+              <option value="">Selecione</option>S
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="form_reducedMobility"><i class="fab fa-accessible-icon text-primary"></i> <input type="checkbox" id="form_reducedMobility"> Caminhos acessíveis para pessoas com mobilidade reduzida</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Encontrar Rota</button>
+        </form>
+        <hr>
+        <p>Distância a percorrer: 126 metros</p>
+        <ul class="list-group path-descriptions">
+          <li class="list-group-item">Desça através do caminho coberto em direção a saí­da para terminal central</li>
+          <li class="list-group-item">Desça através do caminho coberto em direção a saí­da para terminal central</li>
+          <li class="list-group-item">Siga até a próxima esquina</li>
+          <li class="list-group-item">Porta ac consectetur ac</li>
+          <li class="list-group-item">Desça através do caminho coberto em direção</li>
+        </ul>
+      </div>
+      <div class="col-sm-9">
+        <div class="map-content">
+          <canvas id="c" width="900" height="550" class="map-container"></canvas>
+          <div class="zoom-buttons btn-group" role="group">
+            <button type="button" class="btn btn-secondary"><i class="fas fa-minus"></i></button>
+            <button type="button" class="btn btn-secondary"><i class="fas fa-plus"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/maps.js"></script>
+</body>
+</html>
