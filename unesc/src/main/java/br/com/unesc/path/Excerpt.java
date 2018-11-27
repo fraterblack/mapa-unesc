@@ -1,5 +1,6 @@
 package br.com.unesc.path;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 
@@ -16,7 +17,8 @@ public class Excerpt extends Model {
 	@DatabaseField
 	private String description;
 	
-	@DatabaseField(foreign = true, foreignAutoRefresh = true, columnName = "path_id", index = true)
+	@JsonIgnore
+	@DatabaseField(foreign = true, foreignAutoRefresh = false, columnName = "path_id", index = true)
 	private Path path;
 	
 	public Excerpt() {

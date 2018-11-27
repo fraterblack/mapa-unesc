@@ -10,10 +10,10 @@ public class Application {
     	// Configure Spark
     	staticFiles.location("/public");
     	
-    	/*notFound((req, res) -> {
+    	notFound((req, res) -> {
     	    res.type("application/json");
-    	    return "{\"message\":\"Endpoint not found\"}";
-    	});*/
+    	    return res.body();
+    	});
     	
     	internalServerError((req, res) -> {
     	    res.type("application/json");
@@ -30,7 +30,7 @@ public class Application {
     	    path("/caminho", () -> {
     	    	get("", (req, res) -> { return PathController.getAll(req, res); });
     	    	get("/:id", (req, res) -> { return PathController.getById(req, res); });
-    	    	get("/:originId/to/:destinationId", (req, res) -> { return PathController.getSmallestRoute(req, res); });
+    	    	get("/:originId/para/:destinationId", (req, res) -> { return PathController.getSmallestRoute(req, res); });
     	    });
     	});
     }

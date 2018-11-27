@@ -21,7 +21,7 @@ public abstract class Controller {
             
             return mapper.writeValueAsString(data);
         } catch (IOException e){
-            throw new RuntimeException("IOException from a StringWriter?");
+            throw new RuntimeException(e.getMessage());
         }
     }
 }

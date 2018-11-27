@@ -3,6 +3,8 @@ package br.com.unesc.path;
 import java.util.List;
 import java.util.TreeMap;
 
+import com.j256.ormlite.dao.Dao;
+
 import br.com.unesc.algorithm.PathFounder;
 import br.com.unesc.shared.Controller;
 import spark.Request;
@@ -53,7 +55,10 @@ public class PathController extends Controller {
 		}
 		
 		try {
-			List<Path> paths = getDAO(Path.class).queryForAll();
+			Dao<Path, String> pathDAO = getDAO(Path.class);
+			pathDAO.setObjectCache(true);
+			
+			List<Path> paths = pathDAO.queryForAll();
 			
 			//Instantiate class that found small path
 			PathFounder pathFounder = new PathFounder(paths);
