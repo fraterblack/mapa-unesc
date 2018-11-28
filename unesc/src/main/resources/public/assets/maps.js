@@ -1,5 +1,3 @@
-
-
 (function () {
   //Constantes
   const TEXT_SIZE = 12;
@@ -8,6 +6,7 @@
   const LINE_COLOR = 'red';
   const LINE_COLOR_HOVER = '#ff4f4f';
   const IMAGE_MAP_SRC = './assets/mapa.png';
+  const API_ENDPOINT = 'http://localhost:4567/api';
 
   fabric.Object.prototype.originX = fabric.Object.prototype.originY = 'center';
 
@@ -100,6 +99,12 @@
     return new Promise((resolve) => {
       const response = {};
 
+      //Clear before create
+      var objects = canvas.getObjects();
+      for (let i in objects) {
+        canvas.remove(objects[i]);
+      }
+
       fabric.Image.fromURL(IMAGE_MAP_SRC, (mapImage) => {
         response.elements = [];
 
@@ -110,41 +115,39 @@
 
             //Cria a linha
             if (lastExcerpt) {
-              descriptionObj = excerpt.description ? makeDescription(lastExcerpt.x, lastExcerpt.y, excerpt.x, excerpt.y, excerpt.description) : {};
+              descriptionObj = excerpt.description ? makeDescription(lastExcerpt.posX, lastExcerpt.posY, excerpt.posX, excerpt.posY, excerpt.description) : {};
             }
 
             //Cria ponto inicial
             if (index === 1) {
-              //Só imprime nome do ponto for "place" ou não for "place"
-              if (lastExcerpt && lastExcerpt.place) {
-                response.elements.push(makeNodeName(lastExcerpt.x, lastExcerpt.y, lastExcerpt.name));
-              }
+              //Se for um local
+              if (path.originPlace && path.originPlace.place) {
+                //Nome do ponto
+                response.elements.push(makeNodeName(lastExcerpt.posX, lastExcerpt.posY, path.originPlace.name));
 
-              //Só imprime ponto destacado se for "place"
-              if (lastExcerpt && lastExcerpt.place) {
-                response.elements.unshift(makePlaceCircle(lastExcerpt.x, lastExcerpt.y));
+                //Ponto em destaque
+                response.elements.unshift(makePlaceCircle(lastExcerpt.posX, lastExcerpt.posY));
               } else {
-                response.elements.unshift(makeIntermediaryCircle(lastExcerpt.x, lastExcerpt.y));
+                response.elements.unshift(makeIntermediaryCircle(lastExcerpt.posX, lastExcerpt.posY));
               }
             }
 
             //Cria ponto final
             if (index === (path.excerpts.length - 1)) {
-              if (excerpt && excerpt.place) {
-                response.elements.push(makeNodeName(excerpt.x, excerpt.y, excerpt.name));
-              }
+              if (path.destinationPlace && path.destinationPlace.place) {
+                //Nome do ponto
+                response.elements.push(makeNodeName(excerpt.posX, excerpt.posY, path.destinationPlace.name));
 
-              //Só imprime ponto destacado se for "place"
-              if (excerpt.place) {
-                response.elements.unshift(makePlaceCircle(excerpt.x, excerpt.y));
+                //Ponto em destaque
+                response.elements.unshift(makePlaceCircle(excerpt.posX, excerpt.posY));
               } else {
-                response.elements.unshift(makeIntermediaryCircle(excerpt.x, excerpt.y));
+                response.elements.unshift(makeIntermediaryCircle(excerpt.posX, excerpt.posY));
               }
 
               //Cria pontos intermediários
             } else if (index >= 1) {
               //Descomente para ativar ponto intermediário
-              response.elements.push(makeIntermediaryCircle(excerpt.x, excerpt.y));
+              response.elements.push(makeIntermediaryCircle(excerpt.posX, excerpt.posY));
             }
 
             //Adiciona descrição para os elementos
@@ -154,7 +157,7 @@
 
             //Cria a linha
             if (lastExcerpt) {
-              response.elements.unshift(makeLinePath(lastExcerpt.x, lastExcerpt.y, excerpt.x, excerpt.y, descriptionObj));
+              response.elements.unshift(makeLinePath(lastExcerpt.posX, lastExcerpt.posY, excerpt.posX, excerpt.posY, descriptionObj));
             }
 
             //Armazena o último trecho afim de criar a linha na próxima iteração
@@ -268,18 +271,48 @@
     map.setCoords();
   }
 
-  function getPathByNodes(paths, originNode, destinationNode, reducedMobility) {
-    return paths.filter((path) => {
-      const originExists = path.originNode.name === originNode.name;
-      const destinationExists = !destinationNode || (path.destinationNode.name === destinationNode.name);
-      const reducedMobilityExists = reducedMobility === undefined || path.reducedMobility === reducedMobility;
-
-      return originExists && destinationExists && reducedMobilityExists;
-    });
+  //Resize canvas to fullsize
+  function fullCanvas() {
+    canvasElement.width = canvasContainerElement.clientWidth;
+    canvasElement.height = canvasContainerElement.clientHeight;
   }
 
-  //IMPLEMENTAÇÃO
-  var canvas = this.__canvas = new fabric.Canvas('c', {
+  function zoom(type) {
+    if (!canvas && !canvas.map) {
+      return;
+    }
+
+    switch(type) {
+      case 'in':
+        scale += 0.1;
+        break;
+      case 'out':
+        scale -= 0.1;
+        break;
+      default:
+        return;
+    }
+
+    if (scale > 1) {
+      scale = 1;
+    }
+
+    if (scale < 0.5) {
+      scale = 0.5;
+    }
+
+    scaleMap(canvas.map, scale);
+    canvas.requestRenderAll();
+  }
+
+  //Implementation
+  const canvasContainerElement = document.getElementById('canvasContainer');
+  const canvasElement = document.getElementById('canvasMap');
+
+  //Call function to resize canvas
+  fullCanvas();
+
+  const canvas = this.__canvas = new fabric.Canvas('canvasMap', {
     selection: false,
     backgroundColor: "#fff",
 
@@ -289,20 +322,165 @@
   fabric.Object.prototype.originX = 'left';
   fabric.Object.prototype.originY = 'top';
 
-  //Cria o mapa
-  generateMap(canvas, [])
-    .then((response) => {
-      //Escala mapa
-      const scale = 1;
+  window.addEventListener('resize', fullCanvas, false);
 
-      scaleMap(response.map, scale);
+  //Actions to zoom buttons
+  const zoomInButton = document.getElementById('zoomInButton');
+  zoomInButton.addEventListener('click', () => {
+    zoom('in');
 
-      //Centraliza o caminho inicial no centro do mapa
-      const initialPositionX = 650;
-      const initialPositionY = 1840;
-      const left = -((initialPositionX * scale) - (canvas.getWidth() / 2));
-      const top = -((initialPositionY * scale) - (canvas.getHeight() / 2));
+    if (scale >= 1) {
+      this.disabled = true;
+    }
 
-      moveMap(response.map, left, top);
-    });
+    if (scale > 0.5) {
+      zoomOutButton.removeAttribute('disabled');
+    }
+  });
+
+  const zoomOutButton = document.getElementById('zoomOutButton');
+  zoomOutButton.addEventListener('click', () => {
+    zoom('out');
+
+    if (scale <= 0.5) {
+      this.disabled = true;
+    }
+
+    if (scale < 1) {
+      zoomInButton.removeAttribute('disabled');
+    }
+  });
+
+  //Loads places to fields
+  const loadMap = (originId, destinationId, reducedMobility) => {
+    setBusyMode();
+    resetSearchInfo();
+
+    fetch(API_ENDPOINT + '/rota?origem=' + originId + '&destino=' + destinationId  + '&mobilidadeReduzida=' + reducedMobility)
+      .then(response => {
+        if (response.ok) {
+          return Promise.resolve(response);
+        } else {
+          return Promise.reject(new Error('Failed to load'));
+        }
+      })
+      //Convert response to Json
+      .then(response => response.json())
+      //Parse paths
+      .then((response) => {
+        const parsedPaths = [];
+        for (let i = 0; i < response.total_paths; i++) {
+          parsedPaths.push(response.paths[i]);
+        }
+        response.paths = parsedPaths;
+
+        return response;
+      })
+      //Generate Map
+      .then(data => {
+        renderizeMap(data.paths);
+        printStepByStepDescription(data.paths);
+        printTotalDistance(data.total_distance);
+      })
+      .catch((error) => {
+        renderizeMap([]);
+        console.log(`Error: ${error.message}`);
+      })
+      .finally(() => {
+        setTimeout(unsetBusyMode, 500);
+      });
+  };
+
+  const renderizeMap = (paths) => {
+    generateMap(canvas, paths)
+      .then((data) => {
+        //Set map to canvas
+        canvas.map = data.map;
+
+        //Scale map
+        scaleMap(data.map, scale);
+
+        //Center map to the initial path
+        const initialPositionX = paths[0] && paths[0].excerpts[0] ? paths[0].excerpts[0].posX : 730;
+        const initialPositionY = paths[0] && paths[0].excerpts[0] ? paths[0].excerpts[0].posY : 1926;
+        const left = -((initialPositionX * scale) - (canvas.getWidth() / 2));
+        const top = -((initialPositionY * scale) - (canvas.getHeight() / 2));
+
+        moveMap(data.map, left, top);
+      });
+  }
+
+  const printStepByStepDescription = (paths) => {
+    const element = document.getElementById('stepByStepDescriptions');
+
+    paths.forEach((path) => {
+      path.excerpts
+        //Remove duplicated
+        .reduce((unique, o) => {
+          if (!unique.some(obj => obj.description === o.description)) {
+            unique.push(o);
+          }
+          return unique;
+        }, [])
+        //Add item to list
+        .forEach((excerpt) => {
+          if (excerpt.description) {
+            const item = document.createElement('li');
+            item.classList.add('list-group-item');
+            item.innerHTML = excerpt.description;
+            element.appendChild(item);
+          }
+        });
+    })
+  };
+
+  const printTotalDistance = (distance) => {
+    const element = document.getElementById('totalDistance');
+
+    element.getElementsByTagName('span')[0].innerText = distance;
+    element.style.display = 'block';
+  };
+
+  const resetSearchInfo = () => {
+    document.getElementById('stepByStepDescriptions').innerHTML = '';
+    document.getElementById('totalDistance').style.display = 'none';
+  };
+
+  const setBusyMode = () => {
+    document.getElementById('canvasMap').classList.add('loading');
+    document.getElementById('loader').style.display = 'block';
+  };
+
+  const unsetBusyMode = () => {
+    document.getElementById('canvasMap').classList.remove('loading');
+    document.getElementById('loader').style.display = 'none';
+  };
+
+  //Escale map
+  let scale = 0.75;
+
+  //Renderize initial map
+  renderizeMap([]);
+
+  /* setTimeout(function () {
+    loadMap(1, 2);
+  }, 2000); */
+  
+  setTimeout(function () {
+    loadMap(2, 1);
+  }, 1000);
+
+  setTimeout(function () {
+    loadMap(2, 999);
+  }, 3000);
+
+  /*setTimeout(function () {
+    loadMap(9, 20);
+  }, 10000); */
+
+  /* setTimeout(function () {
+    scaleMap(canvas.map, 0.6);
+
+    canvas.requestRenderAll();
+  }, 1000); */
 })();

@@ -49,11 +49,13 @@ public class PathFounder {
 	}
 	
 	public TreeMap<Integer, Path> findSmallestRoute(Integer originId, Integer destinationId) throws Exception {
+		if (nodeIndexes.get(originId) == null || nodeIndexes.get(destinationId) == null) {
+			return parseRouteToDestination(dij.getRouteToDestination());
+		}
+
 		dij.findSmallestRoute(nodeIndexes.get(originId), nodeIndexes.get(destinationId));
 		
 		return parseRouteToDestination(dij.getRouteToDestination());
-		
-		//return paths;
 	}
 	
 	private TreeMap<Integer, Path> parseRouteToDestination(TreeMap<Integer, Edge> route) {

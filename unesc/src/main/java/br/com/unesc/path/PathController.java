@@ -48,7 +48,7 @@ public class PathController extends Controller {
 	
 	public static String getSmallestRoute(Request request, Response response) {
 		//Validate params
-		if (request.params("originId") == null || request.params("destinationId") == null) {
+		if (request.queryParams("origem") == null || request.queryParams("destino") == null) {
 			response.status(404);
 			
 			return "";
@@ -58,13 +58,15 @@ public class PathController extends Controller {
 			Dao<Path, String> pathDAO = getDAO(Path.class);
 			pathDAO.setObjectCache(true);
 			
-			List<Path> paths = pathDAO.queryForAll();
+			List<Path> paths = request.queryParams("mobilidadeReduzida") != null && request.queryParams("mobilidadeReduzida").equals("1")
+					? pathDAO.queryForEq("isAccessibleReducedMobility", 1)
+					: pathDAO.queryForAll();
 			
 			//Instantiate class that found small path
 			PathFounder pathFounder = new PathFounder(paths);
 			
 			//Found small route from origin to destination
-			TreeMap<Integer, Path> routePaths = pathFounder.findSmallestRoute(Integer.parseInt(request.params("originId")), Integer.parseInt(request.params("destinationId")));
+			TreeMap<Integer, Path> routePaths = pathFounder.findSmallestRoute(Integer.parseInt(request.queryParams("origem")), Integer.parseInt(request.queryParams("destino")));
 			
 			//If none path is returned, the route is impossible
 			if (routePaths.size() == 0) {

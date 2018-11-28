@@ -15,42 +15,39 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-sm">
-        <form action="x">
-          <h5><i class="fas fa-search "></i> Busca Menor Caminho</h5>
+      <div class="col-sm search-column">
+        <form>
+          <h6><i class="fas fa-search"></i> Busca Menor Caminho</h6>
           <div class="form-group">
-            <label for=""><i class="fas fa-map-marker-alt text-primary"></i> Ponto de Partida</label>
-            <select name="" id="" class="form-control">
+            <label for="originField"><i class="fas fa-map-marker-alt text-primary"></i> Ponto de Partida</label>
+            <select name="origin" id="originField" class="form-control">
               <option value="">Selecione</option>
             </select>
           </div>
           <div class="form-group">
-            <label for=""><i class="fas fa-map-marker-alt text-primary"></i> Ponto de Destino</label>
-            <select name="" id="" class="form-control">
-              <option value="">Selecione</option>S
+            <label for="destinationField"><i class="fas fa-map-marker-alt text-primary"></i> Ponto de Destino</label>
+            <select name="destination" id="destinationField" class="form-control">
+              <option value="">Selecione</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="form_reducedMobility"><i class="fab fa-accessible-icon text-primary"></i> <input type="checkbox" id="form_reducedMobility"> Caminhos acessíveis para pessoas com mobilidade reduzida</label>
+            <label for="reducedMobilityField" title="Somente caminhos acessíveis para pessoas com mobilidade reduzida"><i class="fab fa-accessible-icon text-primary"></i> <input type="checkbox" id="reducedMobilityField"> Mobilidade reduzida</label>
           </div>
-          <button type="submit" class="btn btn-primary btn-block">Encontrar Rota</button>
+          <button id="findRouteButton" type="submit" class="btn btn-primary btn-block">Encontrar Rota</button>
         </form>
         <hr>
-        <p>Distância a percorrer: 126 metros</p>
-        <ul class="list-group path-descriptions">
-          <li class="list-group-item">Desça através do caminho coberto em direção a saí­da para terminal central</li>
-          <li class="list-group-item">Desça através do caminho coberto em direção a saí­da para terminal central</li>
-          <li class="list-group-item">Siga até a próxima esquina</li>
-          <li class="list-group-item">Porta ac consectetur ac</li>
-          <li class="list-group-item">Desça através do caminho coberto em direção</li>
-        </ul>
+        <div class="search-result">
+          <p id="totalDistance" class="path-distance">Distância a percorrer: <span></span> metros</p>
+          <ul id="stepByStepDescriptions" class="list-group path-descriptions"></ul>
+        </div>
       </div>
-      <div class="col-sm-9">
-        <div class="map-content">
-          <canvas id="c" width="900" height="550" class="map-container"></canvas>
+      <div class="col-sm-9 map-column">
+        <div id="canvasContainer" class="map-content">
+          <div id="loader" class="loader"><i class="fas fa-circle-notch fa-spin"></i></div>
+          <canvas id="canvasMap" class="map-container"></canvas>
           <div class="zoom-buttons btn-group" role="group">
-            <button type="button" class="btn btn-secondary"><i class="fas fa-minus"></i></button>
-            <button type="button" class="btn btn-secondary"><i class="fas fa-plus"></i></button>
+            <button id="zoomOutButton" type="button" class="btn btn-primary"><i class="fas fa-minus"></i></button>
+            <button id="zoomInButton"type="button" class="btn btn-primary"><i class="fas fa-plus"></i></button>
           </div>
         </div>
       </div>

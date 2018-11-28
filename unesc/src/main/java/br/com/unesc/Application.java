@@ -30,7 +30,10 @@ public class Application {
     	    path("/caminho", () -> {
     	    	get("", (req, res) -> { return PathController.getAll(req, res); });
     	    	get("/:id", (req, res) -> { return PathController.getById(req, res); });
-    	    	get("/:originId/para/:destinationId", (req, res) -> { return PathController.getSmallestRoute(req, res); });
+    	    });
+    	    
+    	    path("/rota", () -> {
+    	    	get("", (req, res) -> { return PathController.getSmallestRoute(req, res); });
     	    });
     	});
     }

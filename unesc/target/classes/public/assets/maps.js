@@ -1,5 +1,3 @@
-
-
 (function () {
   //Constantes
   const TEXT_SIZE = 12;
@@ -8,8 +6,6 @@
   const LINE_COLOR = 'red';
   const LINE_COLOR_HOVER = '#ff4f4f';
   const IMAGE_MAP_SRC = './assets/mapa.png';
-  const DISTANCE_SCALE = 0.39;
-  const TEST_MODE = true;
 
   fabric.Object.prototype.originX = fabric.Object.prototype.originY = 'center';
 
@@ -98,15 +94,6 @@
     });
   }
 
-  function getDistance(x1, y1, x2, y2) {
-    var scale = DISTANCE_SCALE;
-
-    var dx = x1 - x2;
-    var dy = y1 - y2;
-    var dist = Math.sqrt(dx * dx + dy * dy);
-    return parseInt(dist * scale);
-  }
-
   async function generateMap(canvas, paths, nodes) {
     return new Promise((resolve) => {
       const response = {};
@@ -121,41 +108,39 @@
 
             //Cria a linha
             if (lastExcerpt) {
-              descriptionObj = excerpt.description ? makeDescription(lastExcerpt.x, lastExcerpt.y, excerpt.x, excerpt.y, excerpt.description) : {};
+              descriptionObj = excerpt.description ? makeDescription(lastExcerpt.posX, lastExcerpt.posY, excerpt.posX, excerpt.posY, excerpt.description) : {};
             }
 
             //Cria ponto inicial
             if (index === 1) {
-              //Só imprime nome do ponto for "place" ou não for "place" porém estiver em modo teste
-              if ((lastExcerpt && lastExcerpt.place) || TEST_MODE) {
-                response.elements.push(makeNodeName(lastExcerpt.x, lastExcerpt.y, lastExcerpt.name));
-              }
+              //Se for um local
+              if (path.originPlace && path.originPlace.place) {
+                //Nome do ponto
+                response.elements.push(makeNodeName(lastExcerpt.posX, lastExcerpt.posY, path.originPlace.name));
 
-              //Só imprime ponto destacado se for "place"
-              if (lastExcerpt && lastExcerpt.place) {
-                response.elements.unshift(makePlaceCircle(lastExcerpt.x, lastExcerpt.y));
+                //Ponto em destaque
+                response.elements.unshift(makePlaceCircle(lastExcerpt.posX, lastExcerpt.posY));
               } else {
-                response.elements.unshift(makeIntermediaryCircle(lastExcerpt.x, lastExcerpt.y, TEST_MODE));
+                response.elements.unshift(makeIntermediaryCircle(lastExcerpt.posX, lastExcerpt.posY));
               }
             }
-            
+
             //Cria ponto final
             if (index === (path.excerpts.length - 1)) {
-              if ((excerpt && excerpt.place) || TEST_MODE) {
-                response.elements.push(makeNodeName(excerpt.x, excerpt.y, excerpt.name));
+              if (path.destinationPlace && path.destinationPlace.place) {
+                //Nome do ponto
+                response.elements.push(makeNodeName(excerpt.posX, excerpt.posY, path.destinationPlace.name));
+
+                //Ponto em destaque
+                response.elements.unshift(makePlaceCircle(excerpt.posX, excerpt.posY));
+              } else {
+                response.elements.unshift(makeIntermediaryCircle(excerpt.posX, excerpt.posY));
               }
 
-              //Só imprime ponto destacado se for "place"
-              if (excerpt.place) {
-                response.elements.unshift(makePlaceCircle(excerpt.x, excerpt.y));
-              } else {
-                response.elements.unshift(makeIntermediaryCircle(excerpt.x, excerpt.y, TEST_MODE));
-              }
-              
-            //Cria pontos intermediários
+              //Cria pontos intermediários
             } else if (index >= 1) {
               //Descomente para ativar ponto intermediário
-              response.elements.push(makeIntermediaryCircle(excerpt.x, excerpt.y));
+              response.elements.push(makeIntermediaryCircle(excerpt.posX, excerpt.posY));
             }
 
             //Adiciona descrição para os elementos
@@ -165,7 +150,7 @@
 
             //Cria a linha
             if (lastExcerpt) {
-              response.elements.unshift(makeLinePath(lastExcerpt.x, lastExcerpt.y, excerpt.x, excerpt.y, descriptionObj));
+              response.elements.unshift(makeLinePath(lastExcerpt.posX, lastExcerpt.posY, excerpt.posX, excerpt.posY, descriptionObj));
             }
 
             //Armazena o último trecho afim de criar a linha na próxima iteração
@@ -224,14 +209,14 @@
               hoveredItem.set('stroke', LINE_COLOR);
               hoveredItem.description.visible = false;
             }
-            
+
             option.subTargets[0].set('stroke', LINE_COLOR_HOVER);
             option.subTargets[0].description.visible = true;
-            
+
             if (option.subTargets[0].description && typeof option.subTargets[0].description.bringToFront === 'function') {
               option.subTargets[0].description.bringToFront();
             }
-            
+
             hoveredItem = option.subTargets[0];
           } else {
             if (hoveredItem) {
@@ -279,104 +264,14 @@
     map.setCoords();
   }
 
-  function printPaths(paths, printExcerpts, detectPathWithoutReturn) {
-    generateJsonToExport(paths).forEach(function (path) {
-      const originName = !path.originNode.name ? '' : path.originNode.name;
-      const destinationName = !path.destinationNode.name ? '' : path.destinationNode.name;
-
-      console.log('* ' + originName + ' -> ' + destinationName + (path.reducedMobility ? ' - RM' : ''));
-      
-      if (detectPathWithoutReturn) {
-        const returnPath = paths.find((item) => {
-          return path.originNode.name === item.destinationNode.name && path.destinationNode.name === item.originNode.name;
-        });
-  
-        if (!returnPath) {
-          console.warn('Não existe caminho de volta');
-        }
-      }
-
-      if (printExcerpts) {
-        path.excerpts.forEach((excerpt) => {
-          if (excerpt.description) {
-            console.log('- ' + excerpt.description);
-          }
-        });
-      }
-    });
-  }
-
-  function getPathByNodes(paths, originNode, destinationNode, reducedMobility) {
-    return paths.filter((path) => {
-      const originExists = path.originNode.name === originNode.name;
-      const destinationExists = !destinationNode || (path.destinationNode.name === destinationNode.name);
-      const reducedMobilityExists = reducedMobility === undefined || path.reducedMobility === reducedMobility;
-
-      return originExists && destinationExists && reducedMobilityExists;
-    });
-  }
-
-  //Gera o json para exportação e valida informações
-  function generateJsonToExport(paths) {
-    var clonedPaths = JSON.parse(JSON.stringify(paths));
-    
-    clonedPaths.forEach(function (path, index) {
-      //Valida algumas informações
-      if (path.originNode === path.destinationNode) {
-        throw 'Path[' + index + ']: Ponto de Origem e de Destino são o mesmo';
-      }
-
-      if (path.excerpts.length < 2) {
-        throw 'Path[' + index + ']: Ao menos dois trechos devem ser informados para o caminho';
-      }
-
-      if (!path.originNode.name && path.place) {
-        throw 'Path[' + index + ']: Ponto de Origem não possui nome';
-      }
-
-      if (!path.destinationNode.name && path.place) {
-        throw 'Path[' + index + ']: Ponto de Destino não possui nome';
-      }
-
-      if (path.originNode.x !== path.excerpts[0].x) {
-        throw 'Path[' + index + ']: Ponto de Origem e primeiro trecho do caminho possuem coordenada X diferentes';
-      }
-
-      if (path.originNode.y !== path.excerpts[0].y) {
-        throw 'Path[' + index + ']: Ponto de Origem e primeiro trecho do caminho possuem coordenada Y diferentes';
-      }
-
-      if (path.destinationNode.x !== path.excerpts[path.excerpts.length - 1].x) {
-        throw 'Path[' + index + ']: Ponto de Destino e último trecho do caminho possuem coordenada X diferentes';
-      }
-
-      if (path.destinationNode.y !== path.excerpts[path.excerpts.length - 1].y) {
-        throw 'Path[' + index + ']: Ponto de Destino e último trecho do caminho possuem coordenada Y diferentes';
-      }
-
-      //Calcula e seta distância entre pontos
-      let lastExcerpt;
-      path.distance = path.excerpts.reduce((acumulatedValue, excerpt) => {
-        if (lastExcerpt) {
-          acumulatedValue += getDistance(lastExcerpt.x, lastExcerpt.y, excerpt.x, excerpt.y);
-        }
-
-        //Armazena o último trecho afim de criar a linha na próxima iteração
-        lastExcerpt = excerpt;
-
-        return acumulatedValue;
-      }, 0);
-
-      if (path.distance <= 0) {
-        throw 'Path[' + index + ']: Distância inválida para o caminho (' + path.distance + ')';
-      }
-    });
-
-    return clonedPaths;
-  }
-
   //IMPLEMENTAÇÃO
-  var canvas = this.__canvas = new fabric.Canvas('c', {
+  const canvasContainerElement = document.getElementById('canvasContainer');
+  const canvasElement = document.getElementById('canvasMap');
+
+  //Call function to resize canvas
+  fullCanvas();
+
+  const canvas = this.__canvas = new fabric.Canvas('canvasMap', {
     selection: false,
     backgroundColor: "#fff",
 
@@ -386,30 +281,89 @@
   fabric.Object.prototype.originX = 'left';
   fabric.Object.prototype.originY = 'top';
 
-  //const pathsToProcess = [];
-  //const pathsToProcess = getPathByNodes(paths, nodes.a /* , nodes.i_esquina_bc */ );
-  const pathsToProcess = paths;
+  //Resize canvas to fullsize
+  function fullCanvas() {
+    canvasElement.width = canvasContainerElement.clientWidth;
+    canvasElement.height = canvasContainerElement.clientHeight;
+  }
 
-  //Imprime caminhos
-  printPaths(paths, false, true);
+  window.addEventListener('resize', fullCanvas, false);
+
+  //Loads places to fields
+  fetch('http://localhost:4567/api/rota?origem=26&destino=9')
+    .then(response => {
+      if (response.ok) {
+        return Promise.resolve(response);
+      } else {
+        return Promise.reject(new Error('Failed to load'));
+      }
+    })
+    .then(response => response.json())
+    .then(function (response) {
+      const parsedPaths = [];
+
+      for (let i = 0; i < response.total_paths; i++) {
+        parsedPaths.push(response.paths[i]);
+      }
+
+      response.paths = parsedPaths;
+
+      return response;
+    })
+    .then(data => {
+      generateMap(canvas, data.paths)
+        .then((response) => {
+          //Escala mapa
+          const scale = 1;
+
+          scaleMap(response.map, scale);
+
+          //Centraliza o caminho inicial no centro do mmoveMapapa
+          const initialPositionX = 650;
+          const initialPositionY = 1840;
+          const left = -((initialPositionX * scale) - (canvas.getWidth() / 2));
+          const top = -((initialPositionY * scale) - (canvas.getHeight() / 2));
+
+          moveMap(response.map, left, top);
+        });
+
+
+    })
+    .catch(function (error) {
+      console.log(`Error: ${error.message}`);
+    });
+
+  /* var myRequest = new Request('http://localhost:4567/api/rota?origem=1&destino=2&mobilidadeReduzida=1');
+  console.log(myRequest);
+   // .then((r) => console.log(r));
+  //?origem=1&destino=2&mobilidadeReduzida=1
+
+  fetch(myRequest)
+    .then(function (response) {
+
+      generateMap(canvas, response);
+      //var objectURL = URL.createObjectURL(response);
+      //myImage.src = objectURL;
+    }); */
+
+  //On submit search form
 
   //Cria o mapa
-  generateMap(canvas, pathsToProcess)
-  //generateMap(canvas, pathsToProcess, nodes)
+  /* generateMap(canvas, [])
     .then((response) => {
+      console.log('On application init');
+
       //Escala mapa
       const scale = 1;
 
       scaleMap(response.map, scale);
 
-      //Centraliza o caminho inicial no centro do mapa
-      const initialPath = paths[0];
-      const left = -((initialPath.excerpts[0].x * scale) - (canvas.getWidth() / 2));
-      const top = -((initialPath.excerpts[0].y * scale) - (canvas.getHeight() / 2));
+      //Centraliza o caminho inicial no centro do mmoveMapapa
+      const initialPositionX = 650;
+      const initialPositionY = 1840;
+      const left = -((initialPositionX * scale) - (canvas.getWidth() / 2));
+      const top = -((initialPositionY * scale) - (canvas.getHeight() / 2));
 
       moveMap(response.map, left, top);
-  });
-
-  console.log('//-----');
-  console.log(JSON.stringify(generateJsonToExport(pathsToProcess)));
+    }); */
 })();
