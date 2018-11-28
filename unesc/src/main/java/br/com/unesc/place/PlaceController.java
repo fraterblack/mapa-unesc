@@ -2,13 +2,14 @@ package br.com.unesc.place;
 
 import spark.Request;
 import spark.Response;
+
 import br.com.unesc.shared.Controller;
 
 public class PlaceController extends Controller {
-	public static String getAll(Request request, Response response) {
+	public static String getByQuery(Request request, Response response) {
 		
 		try {
-			return dataToJson(getDAO(Place.class).queryForAll());
+			return dataToJson(getDAO(Place.class).queryForEq("isPlace", 1));
 		} catch (Exception e) {
 			response.status(501);
 			

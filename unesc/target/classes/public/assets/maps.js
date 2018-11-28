@@ -6,6 +6,7 @@
   const LINE_COLOR = 'red';
   const LINE_COLOR_HOVER = '#ff4f4f';
   const IMAGE_MAP_SRC = './assets/mapa.png';
+  const API_ENDPOINT = 'http://localhost:4567/api';
 
   fabric.Object.prototype.originX = fabric.Object.prototype.originY = 'center';
 
@@ -97,6 +98,12 @@
   async function generateMap(canvas, paths, nodes) {
     return new Promise((resolve) => {
       const response = {};
+
+      //Clear before create
+      var objects = canvas.getObjects();
+      for (let i in objects) {
+        canvas.remove(objects[i]);
+      }
 
       fabric.Image.fromURL(IMAGE_MAP_SRC, (mapImage) => {
         response.elements = [];
@@ -264,7 +271,41 @@
     map.setCoords();
   }
 
-  //IMPLEMENTAÇÃO
+  //Resize canvas to fullsize
+  function fullCanvas() {
+    canvasElement.width = canvasContainerElement.clientWidth;
+    canvasElement.height = canvasContainerElement.clientHeight;
+  }
+
+  function zoom(type) {
+    if (!canvas && !canvas.map) {
+      return;
+    }
+
+    switch(type) {
+      case 'in':
+        scale += 0.1;
+        break;
+      case 'out':
+        scale -= 0.1;
+        break;
+      default:
+        return;
+    }
+
+    if (scale > 1) {
+      scale = 1;
+    }
+
+    if (scale < 0.5) {
+      scale = 0.5;
+    }
+
+    scaleMap(canvas.map, scale);
+    canvas.requestRenderAll();
+  }
+
+  //Implementation
   const canvasContainerElement = document.getElementById('canvasContainer');
   const canvasElement = document.getElementById('canvasMap');
 
@@ -281,89 +322,175 @@
   fabric.Object.prototype.originX = 'left';
   fabric.Object.prototype.originY = 'top';
 
-  //Resize canvas to fullsize
-  function fullCanvas() {
-    canvasElement.width = canvasContainerElement.clientWidth;
-    canvasElement.height = canvasContainerElement.clientHeight;
-  }
-
   window.addEventListener('resize', fullCanvas, false);
 
+  //Actions to zoom buttons
+  const zoomInButton = document.getElementById('zoomInButton');
+  zoomInButton.addEventListener('click', () => {
+    zoom('in');
+
+    if (scale >= 1) {
+      this.disabled = true;
+    }
+
+    if (scale > 0.5) {
+      zoomOutButton.removeAttribute('disabled');
+    }
+  });
+
+  const zoomOutButton = document.getElementById('zoomOutButton');
+  zoomOutButton.addEventListener('click', () => {
+    zoom('out');
+
+    if (scale <= 0.5) {
+      this.disabled = true;
+    }
+
+    if (scale < 1) {
+      zoomInButton.removeAttribute('disabled');
+    }
+  });
+
   //Loads places to fields
-  fetch('http://localhost:4567/api/rota?origem=26&destino=9')
-    .then(response => {
-      if (response.ok) {
-        return Promise.resolve(response);
-      } else {
-        return Promise.reject(new Error('Failed to load'));
-      }
-    })
-    .then(response => response.json())
-    .then(function (response) {
-      const parsedPaths = [];
+  const loadMap = (originId, destinationId, reducedMobility) => {
+    setBusyMode();
+    resetSearchInfo();
 
-      for (let i = 0; i < response.total_paths; i++) {
-        parsedPaths.push(response.paths[i]);
-      }
+    fetch(API_ENDPOINT + '/rota?origem=' + originId + '&destino=' + destinationId  + '&mobilidadeReduzida=' + (reducedMobility || 0))
+      //Convert response to Json
+      .then(response => response.json())
+      //Parse paths
+      .then((response) => {
+        const parsedPaths = [];
+        for (let i = 0; i < response.total_paths; i++) {
+          parsedPaths.push(response.paths[i]);
+        }
+        response.paths = parsedPaths;
 
-      response.paths = parsedPaths;
+        return response;
+      })
+      //Generate Map
+      .then(data => {
+        renderizeMap(data.paths);
+        printStepByStepDescription(data.paths);
+        printTotalDistance(data.total_distance);
+      })
+      .catch((error) => {
+        renderizeMap([]);
 
-      return response;
-    })
-    .then(data => {
-      generateMap(canvas, data.paths)
-        .then((response) => {
-          //Escala mapa
-          const scale = 1;
+        alert('Não existe uma rota entra os locais informados.');
 
-          scaleMap(response.map, scale);
+        console.log(`Error: ${error.message}`);
+      })
+      .finally(() => {
+        setTimeout(unsetBusyMode, 500);
+      });
+  };
 
-          //Centraliza o caminho inicial no centro do mmoveMapapa
-          const initialPositionX = 650;
-          const initialPositionY = 1840;
-          const left = -((initialPositionX * scale) - (canvas.getWidth() / 2));
-          const top = -((initialPositionY * scale) - (canvas.getHeight() / 2));
+  const renderizeMap = (paths) => {
+    generateMap(canvas, paths)
+      .then((data) => {
+        //Set map to canvas
+        canvas.map = data.map;
 
-          moveMap(response.map, left, top);
+        //Scale map
+        scaleMap(data.map, scale);
+
+        //Center map to the initial path
+        const initialPositionX = paths[0] && paths[0].excerpts[0] ? paths[0].excerpts[0].posX : 730;
+        const initialPositionY = paths[0] && paths[0].excerpts[0] ? paths[0].excerpts[0].posY : 1926;
+        const left = -((initialPositionX * scale) - (canvas.getWidth() / 2));
+        const top = -((initialPositionY * scale) - (canvas.getHeight() / 2));
+
+        moveMap(data.map, left, top);
+      });
+  }
+
+  const printStepByStepDescription = (paths) => {
+    const element = document.getElementById('stepByStepDescriptions');
+
+    paths.forEach((path) => {
+      path.excerpts
+        //Remove duplicated
+        .reduce((unique, o) => {
+          if (!unique.some(obj => obj.description === o.description)) {
+            unique.push(o);
+          }
+          return unique;
+        }, [])
+        //Add item to list
+        .forEach((excerpt) => {
+          if (excerpt.description) {
+            const item = document.createElement('li');
+            item.classList.add('list-group-item');
+            item.innerHTML = excerpt.description;
+            element.appendChild(item);
+          }
         });
-
-
     })
-    .catch(function (error) {
-      console.log(`Error: ${error.message}`);
-    });
+  };
 
-  /* var myRequest = new Request('http://localhost:4567/api/rota?origem=1&destino=2&mobilidadeReduzida=1');
-  console.log(myRequest);
-   // .then((r) => console.log(r));
-  //?origem=1&destino=2&mobilidadeReduzida=1
+  const printTotalDistance = (distance) => {
+    const element = document.getElementById('totalDistance');
 
-  fetch(myRequest)
-    .then(function (response) {
+    element.getElementsByTagName('span')[0].innerText = distance;
+    element.style.display = 'block';
+  };
 
-      generateMap(canvas, response);
-      //var objectURL = URL.createObjectURL(response);
-      //myImage.src = objectURL;
-    }); */
+  const resetSearchInfo = () => {
+    document.getElementById('stepByStepDescriptions').innerHTML = '';
+    document.getElementById('totalDistance').style.display = 'none';
+  };
 
-  //On submit search form
+  const setBusyMode = () => {
+    document.getElementById('canvasMap').classList.add('loading');
+    document.getElementById('loader').style.display = 'block';
+  };
 
-  //Cria o mapa
-  /* generateMap(canvas, [])
-    .then((response) => {
-      console.log('On application init');
+  const unsetBusyMode = () => {
+    document.getElementById('canvasMap').classList.remove('loading');
+    document.getElementById('loader').style.display = 'none';
+  };
 
-      //Escala mapa
-      const scale = 1;
+  function loadSelectorOptions() {
+    fetch(API_ENDPOINT + '/lugar')
+      .then((response) => {
+        console.log(response);
+      }); 
+  }
 
-      scaleMap(response.map, scale);
+  //Escale map
+  let scale = 0.75;
 
-      //Centraliza o caminho inicial no centro do mmoveMapapa
-      const initialPositionX = 650;
-      const initialPositionY = 1840;
-      const left = -((initialPositionX * scale) - (canvas.getWidth() / 2));
-      const top = -((initialPositionY * scale) - (canvas.getHeight() / 2));
+  //Renderize initial map
+  renderizeMap([]);
 
-      moveMap(response.map, left, top);
-    }); */
+  //Load selection options
+  loadSelectorOptions();
+
+  //Submit search
+  document.getElementById('formSearch').addEventListener('submit', (evt) => {
+    evt.preventDefault();
+
+    const origin = document.getElementById('originField').value;
+    const destination = document.getElementById('destinationField').value;
+    const reducedMobility = document.getElementById('reducedMobilityField').checked;
+
+    if (!origin || origin === '' || !destination || destination === '') {
+      return;
+    }
+
+    if (origin === destination) {
+      alert('Origem e destino não podem ser os mesmos.');
+
+      return;
+    }
+
+    loadMap(origin, destination, reducedMobility ? 1 : 0);
+  });
+
+  //TODOS:
+  //Redrawn canvas on screen resize
+  //Responsive layout
+
 })();

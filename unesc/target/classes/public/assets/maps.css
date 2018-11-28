@@ -27,6 +27,20 @@ body > .container-fluid .map-column {
   position: absolute;
   top: 0px;
   left: 0px;
+
+  -webkit-transition: all 350ms ease;
+  -moz-transition: all 350ms ease;
+  -ms-transition: all 350ms ease;
+  -o-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+
+.map-container.loading {
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
 }
 
 .zoom-buttons {
@@ -41,6 +55,7 @@ body > .container-fluid .map-column {
 }
 
 .path-distance {
+  display: none;
   font-size: 13px;
 }
 
@@ -50,4 +65,23 @@ body > .container-fluid .map-column {
 
 .path-descriptions .list-group-item {
   padding: .75rem .75rem;
+}
+
+.loader {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.loader i {
+  position: relative;
+  top: calc(50vh - 15px);
+  font-size: 40px
 }

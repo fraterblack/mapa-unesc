@@ -24,7 +24,7 @@ public class Application {
     	// Routes
     	path("/api", () -> {
     	    path("/lugar", () -> {
-    	    	get("", (req, res) -> { return PlaceController.getAll(req, res); });
+    	    	get("", (req, res) -> { return PlaceController.getByQuery(req, res); });
     	    });
     	    
     	    path("/caminho", () -> {

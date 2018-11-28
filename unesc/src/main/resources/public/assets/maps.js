@@ -357,17 +357,10 @@
     resetSearchInfo();
 
     fetch(API_ENDPOINT + '/rota?origem=' + originId + '&destino=' + destinationId  + '&mobilidadeReduzida=' + (reducedMobility || 0))
-      .then(response => {
-        if (response.ok) {
-          return Promise.resolve(response);
-        } else {
-          return Promise.reject(new Error('Failed to load'));
-        }
-      })
       //Convert response to Json
       .then(response => response.json())
       //Parse paths
-      .then((response) => {
+      .then(response => {
         const parsedPaths = [];
         for (let i = 0; i < response.total_paths; i++) {
           parsedPaths.push(response.paths[i]);
@@ -382,7 +375,7 @@
         printStepByStepDescription(data.paths);
         printTotalDistance(data.total_distance);
       })
-      .catch((error) => {
+      .catch(error => {
         renderizeMap([]);
 
         alert('Não existe uma rota entra os locais informados.');
@@ -459,11 +452,45 @@
     document.getElementById('loader').style.display = 'none';
   };
 
-  //Escale map
+  function loadSelectorOptions() {
+    fetch(API_ENDPOINT + '/lugar')
+      //Convert response to Json
+      .then(response => response.json())
+      .then(response => response.sort((a, b) => {
+          if (a.name < b.name) {
+            return -1;
+          }
+          if (a.name > b.name) {
+            return 1;
+          }
+
+          return 0;
+        }))
+        .then(data => {
+          const originField = document.getElementById('originField');
+          const destinationField = document.getElementById('destinationField');
+
+          data.forEach((place) => {
+            const item = document.createElement('option');
+            const item2 = document.createElement('option');
+            item.innerText = item2.innerText = place.name;
+            item.setAttribute('value', place.id);
+            item2.setAttribute('value', place.id);
+
+            originField.appendChild(item);
+            destinationField.appendChild(item2);
+          });
+        });
+  }
+
+  //Escale map'
   let scale = 0.75;
 
   //Renderize initial map
   renderizeMap([]);
+
+  //Load selection options
+  loadSelectorOptions();
 
   //Submit search
   document.getElementById('formSearch').addEventListener('submit', (evt) => {
@@ -485,4 +512,9 @@
 
     loadMap(origin, destination, reducedMobility ? 1 : 0);
   });
+
+  //TODOS:
+  //Redrawn canvas on screen resize
+  //Responsive layout
+
 })();
