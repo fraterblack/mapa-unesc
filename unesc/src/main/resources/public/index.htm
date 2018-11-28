@@ -16,22 +16,29 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm search-column">
-        <form>
+        <form id="formSearch">
           <h6><i class="fas fa-search"></i> Busca Menor Caminho</h6>
           <div class="form-group">
             <label for="originField"><i class="fas fa-map-marker-alt text-primary"></i> Ponto de Partida</label>
             <select name="origin" id="originField" class="form-control">
               <option value="">Selecione</option>
+              <option value="1">Teste 1</option>
+              <option value="26">Teste 26</option>
             </select>
           </div>
           <div class="form-group">
             <label for="destinationField"><i class="fas fa-map-marker-alt text-primary"></i> Ponto de Destino</label>
             <select name="destination" id="destinationField" class="form-control">
               <option value="">Selecione</option>
+              <option value="1">Teste 1</option>
+              <option value="2">Teste 2</option>
+              <option value="9">Teste 9</option>
+              <option value="12">Teste 12</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="reducedMobilityField" title="Somente caminhos acessíveis para pessoas com mobilidade reduzida"><i class="fab fa-accessible-icon text-primary"></i> <input type="checkbox" id="reducedMobilityField"> Mobilidade reduzida</label>
+            <label for="reducedMobilityField" title="Somente caminhos acessíveis para pessoas com mobilidade reduzida">
+              <i class="fab fa-accessible-icon text-primary"></i> <input value="1" type="checkbox" id="reducedMobilityField"> Mobilidade reduzida</label>
           </div>
           <button id="findRouteButton" type="submit" class="btn btn-primary btn-block">Encontrar Rota</button>
         </form>

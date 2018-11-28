@@ -356,7 +356,7 @@
     setBusyMode();
     resetSearchInfo();
 
-    fetch(API_ENDPOINT + '/rota?origem=' + originId + '&destino=' + destinationId  + '&mobilidadeReduzida=' + reducedMobility)
+    fetch(API_ENDPOINT + '/rota?origem=' + originId + '&destino=' + destinationId  + '&mobilidadeReduzida=' + (reducedMobility || 0))
       .then(response => {
         if (response.ok) {
           return Promise.resolve(response);
@@ -384,6 +384,9 @@
       })
       .catch((error) => {
         renderizeMap([]);
+
+        alert('Não existe uma rota entra os locais informados.');
+
         console.log(`Error: ${error.message}`);
       })
       .finally(() => {
@@ -462,25 +465,24 @@
   //Renderize initial map
   renderizeMap([]);
 
-  /* setTimeout(function () {
-    loadMap(1, 2);
-  }, 2000); */
-  
-  setTimeout(function () {
-    loadMap(2, 1);
-  }, 1000);
+  //Submit search
+  document.getElementById('formSearch').addEventListener('submit', (evt) => {
+    evt.preventDefault();
 
-  setTimeout(function () {
-    loadMap(2, 999);
-  }, 3000);
+    const origin = document.getElementById('originField').value;
+    const destination = document.getElementById('destinationField').value;
+    const reducedMobility = document.getElementById('reducedMobilityField').checked;
 
-  /*setTimeout(function () {
-    loadMap(9, 20);
-  }, 10000); */
+    if (!origin || origin === '' || !destination || destination === '') {
+      return;
+    }
 
-  /* setTimeout(function () {
-    scaleMap(canvas.map, 0.6);
+    if (origin === destination) {
+      alert('Origem e destino não podem ser os mesmos.');
 
-    canvas.requestRenderAll();
-  }, 1000); */
+      return;
+    }
+
+    loadMap(origin, destination, reducedMobility ? 1 : 0);
+  });
 })();
