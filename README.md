@@ -27,4 +27,4 @@ Usuário, senha e nome do banco de dados pode ser configurado na classse _br.com
 * Importar o arquivo SQL disponível na pasta unesc/data deste projeto
 
 ## Rodar o projeto
-Basta executar a classe classe _br.com.unesc.Application_, em seguida acessar a URL _http://localhost:4567_ no seu navegador
+Basta executar a classe classe _br.com.unesc.Application_, em seguida acessar a URL _http://localhost:4567/index.htm_ no seu navegador
